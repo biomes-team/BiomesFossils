@@ -3,6 +3,7 @@
 	<v1.4>
 		<li>1.4</li>
 		<li>/</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.4/DLC/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/DLC/Ideology</li>
 		<li IfModActive="vanillaexpanded.outposts">1.4/Mods/VanillaOutpostsExpanded</li>
 	</v1.4>
