@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--============================== Storage ==============================-->
+
+  <ThingDef Name="BMT_FossilDisplayBase" ParentName="FurnitureWithQualityBase" Abstract="True">
+	<description>A common display for displaying fossils.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	</graphicData>
+	<!-- = -->
+	<altitudeLayer>FloorCoverings</altitudeLayer>
+	<blockPlants>true</blockPlants>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<selectable>true</selectable>
+	<useHitPoints>true</useHitPoints>
+	<blocksAltitudes>
+	  <li>FloorCoverings</li>
+	</blocksAltitudes>
+	<!-- <canOverlapZones>true</canOverlapZones> -->
+	<!-- = -->
+	<!-- <thingClass>Building_Storage</thingClass> -->
+	<!-- <altitudeLayer>Building</altitudeLayer> -->
+	<passability>PassThroughOnly</passability>
+	<fillPercent>0.2</fillPercent>
+	<castEdgeShadows>false</castEdgeShadows>
+	<pathCost>50</pathCost>
+	<stuffCategories>
+	  <li>Metallic</li>
+	  <li>Woody</li>
+	  <li>Stony</li>
+	</stuffCategories>
+	<!-- <defaultPlacingRot>South</defaultPlacingRot> -->
+	<defaultPlacingRot>North</defaultPlacingRot>
+	<statBases>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>0.5</Beauty>
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+	</statBases>
+	<building>
+	  <!-- <preventDeteriorationOnTop>true</preventDeteriorationOnTop> -->
+	  <!-- <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty> -->
+	  <!-- <maxItemsInCell>1</maxItemsInCell> -->
+	  <!-- <storageGroupTag>Shelf</storageGroupTag> -->
+	  <!-- <blueprintClass>Blueprint_Storage</blueprintClass> -->
+	  <!-- <fixedStorageSettings> -->
+		<!-- <filter> -->
+		  <!-- <disallowNotEverStorable>true</disallowNotEverStorable> -->
+		  <!-- <categories> -->
+			<!-- <li>BMT_FossilCategory</li> -->
+		  <!-- </categories> -->
+		<!-- </filter> -->
+	  <!-- </fixedStorageSettings> -->
+	  <!-- <defaultStorageSettings> -->
+		<!-- <priority>Critical</priority> -->
+		<!-- <filter> -->
+		  <!-- <categories> -->
+			<!-- <li>BMT_FossilCategory</li> -->
+		  <!-- </categories> -->
+		<!-- </filter> -->
+	  <!-- </defaultStorageSettings> -->
+	  <paintable>true</paintable>
+	  <isEdifice>false</isEdifice>
+	</building>
+	<inspectorTabs>
+	  <li>ITab_Storage</li>
+	</inspectorTabs>
+	<designationHotKey>Misc12</designationHotKey>
+	<staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<!-- <surfaceType>Item</surfaceType> -->
+	<!-- <canOverlapZones>false</canOverlapZones> -->
+	<researchPrerequisites>
+	  <li>ComplexFurniture</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Styleable" />
+	</comps>
+  </ThingDef>
+
+  <!-- TEST -->
+
+  <ThingDef ParentName="BMT_FossilDisplayBase">
+	<defName>BMT_DisplaySmall</defName>
+	<label>small display</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
+	  <drawSize>(1.5,1.5)</drawSize>
+	</graphicData>
+	<costStuffCount>25</costStuffCount>
+	<statBases>
+	  <MaxHitPoints>45</MaxHitPoints> 
+	  <Mass>4</Mass>
+	  <WorkToBuild>500</WorkToBuild>
+	</statBases>
+	<size>(1,1)</size>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_FossilDisplayBase">
+	<defName>BMT_DisplayMedium</defName>
+	<label>medium display</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/DisplayMedium/MedStand</texPath>
+	  <drawSize>(3.0,3.0)</drawSize>
+	</graphicData>
+	<uiIconScale>0.5</uiIconScale>
+	<costStuffCount>46</costStuffCount>
+	<statBases>
+	  <MaxHitPoints>75</MaxHitPoints> 
+	  <Mass>7</Mass>
+	  <WorkToBuild>1250</WorkToBuild>
+	</statBases>
+	<size>(2,2)</size>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_FossilDisplayBase">
+	<defName>BMT_DisplayLarge</defName>
+	<label>large display</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/DisplayLarge/LargeStand</texPath>
+	  <drawSize>(3.7,3.7)</drawSize>
+	</graphicData>
+	<uiIconScale>0.5</uiIconScale>
+	<costStuffCount>78</costStuffCount>
+	<statBases>
+	  <MaxHitPoints>150</MaxHitPoints> 
+	  <Mass>12</Mass>
+	  <WorkToBuild>2250</WorkToBuild>
+	</statBases>
+	<size>(3,3)</size>
+  </ThingDef>
+
+
+</Defs>

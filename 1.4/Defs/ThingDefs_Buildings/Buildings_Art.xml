@@ -204,4 +204,99 @@
   </ThingDef>
   <!-- = -->
 
+  <!--================================ DINOSAUA BONES ======================================-->
+
+  <ThingDef ParentName="BMT_FossilAmberSculptureLargeBase" Name="BMT_FossilAmberSculptureLarge_DINOSAUA" Abstract="True">
+	<!-- <defName>BMT_FossilSculptureSmall</defName> -->
+	<label>dino fossils</label>
+	<description>Fossils glued together using secret blueprints.</description>	<!-- TEMP -->
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2,2)</drawSize>
+	</graphicData>
+	<defaultPlacingRot>South</defaultPlacingRot>
+	<castEdgeShadows>false</castEdgeShadows>
+	<rotatable>true</rotatable>
+	<costList>
+	  <BMT_FossilResource>120</BMT_FossilResource>
+	</costList>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Small" Abstract="True">
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(1.7,1.7)</drawSize>
+	</graphicData>
+	<costList>
+	  <BMT_FossilResource>40</BMT_FossilResource>
+	</costList>
+	<size>(1,1)</size>
+  </ThingDef>
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Medium" Abstract="True">
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.7,2.7)</drawSize>
+	</graphicData>
+	<costList>
+	  <BMT_FossilResource>78</BMT_FossilResource>
+	</costList>
+	<size>(2,2)</size>
+  </ThingDef>
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Large" Abstract="True">
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(3.7,3.7)</drawSize>
+	</graphicData>
+	<costList>
+	  <BMT_FossilResource>122</BMT_FossilResource>
+	</costList>
+	<size>(3,3)</size>
+  </ThingDef>
+
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Ankylosaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Brachiosaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Elasmosaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Gallimimus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Iguanodon</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Mosasaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Oviraptor</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Parasaur</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Pteranodon</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Raptor</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Spino</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Stegosaurus</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/TRex</texPath> -->
+	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
+
+  <!-- ONLY FOR TEST -->
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Small">
+	<defName>BMT_FossilSmall_TEST</defName>
+	<label>dino fossils small</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+	</graphicData>
+    <designationCategory>Structure</designationCategory>
+  </ThingDef>
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Medium">
+	<defName>BMT_FossilMedium_TEST</defName>
+	<label>dino fossils medium</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+	</graphicData>
+    <designationCategory>Structure</designationCategory>
+  </ThingDef>
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Large">
+	<defName>BMT_FossilLarge_TEST</defName>
+	<label>dino fossils large</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+	</graphicData>
+    <designationCategory>Structure</designationCategory>
+  </ThingDef>
+
 </Defs>
