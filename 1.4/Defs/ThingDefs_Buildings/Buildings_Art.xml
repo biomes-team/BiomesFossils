@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <ThingCategoryDef>
+      <defName>BMT_FossilCategory</defName>
+      <label>fossils</label>
+      <parent>Buildings</parent>
+    </ThingCategoryDef>
+	
+	
   <ThingDef ParentName="BuildingBase" Name="BMT_FossilAmberSculptureBase" Abstract="True">
 	<thingClass>Building_Art</thingClass>
 	<altitudeLayer>Building</altitudeLayer>
@@ -9,7 +16,7 @@
 	<useHitPoints>true</useHitPoints>
 	<minifiedDef>MinifiedThing</minifiedDef>
 	<thingCategories>
-	  <li>BuildingsArt</li>
+	  <li>BMT_FossilCategory</li>
 	</thingCategories>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 	<statBases>

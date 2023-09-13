@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<RoomRoleDef>
+    <defName>Museum</defName>
+    <label>museum</label>
+    <workerClass>BMT_Fossils.RoomRoleWorker_Museum</workerClass>
+    <relatedStats>
+      <li>Beauty</li>
+      <li>Cleanliness</li>
+      <li>Space</li>
+      <li>Impressiveness</li>
+    </relatedStats>
+  </RoomRoleDef>
+  
+</Defs>
