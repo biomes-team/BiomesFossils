@@ -3,7 +3,7 @@
 
   <!--============================== Storage ==============================-->
 
-  <ThingDef Name="BMT_FossilDisplayBase" ParentName="FurnitureWithQualityBase" Abstract="True">
+  <ThingDef Name="BMT_FossilDisplayBase" ParentName="FurnitureBase" Abstract="True">
 	<description>A common display for displaying fossils.</description>
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
@@ -18,6 +18,9 @@
 	<blocksAltitudes>
 	  <li>FloorCoverings</li>
 	</blocksAltitudes>
+	<tradeTags>
+	  <li>BMT_FossilTrade</li>
+	</tradeTags>
 	<!-- <canOverlapZones>true</canOverlapZones> -->
 	<!-- = -->
 	<!-- <thingClass>Building_Storage</thingClass> -->
@@ -35,7 +38,7 @@
 	<defaultPlacingRot>North</defaultPlacingRot>
 	<statBases>
 	  <Flammability>1.0</Flammability>
-	  <Beauty>0.5</Beauty>
+	  <Beauty>0</Beauty>
 	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 	</statBases>
 	<building>

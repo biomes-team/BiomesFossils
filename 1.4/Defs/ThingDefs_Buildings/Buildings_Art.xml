@@ -86,6 +86,7 @@
 	</inspectorTabs>
 	<tradeTags>
 	  <li>Art</li>
+	  <li>BMT_FossilTrade</li>
 	</tradeTags>
 	<recipeMaker>
 	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -223,34 +224,45 @@
 	</costList>
   </ThingDef>
 
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Small" Abstract="True">
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilSmallBase" Abstract="True">
 	<graphicData>
 	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <drawSize>(1.7,1.7)</drawSize>
 	</graphicData>
+    <placeWorkers>
+      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
+    </placeWorkers>
 	<costList>
 	  <BMT_FossilResource>40</BMT_FossilResource>
 	</costList>
 	<size>(1,1)</size>
   </ThingDef>
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Medium" Abstract="True">
+  
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilMediumBase" Abstract="True">
 	<graphicData>
 	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <drawSize>(2.7,2.7)</drawSize>
 	</graphicData>
+    <placeWorkers>
+      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
+    </placeWorkers>
 	<costList>
 	  <BMT_FossilResource>78</BMT_FossilResource>
 	</costList>
 	<size>(2,2)</size>
   </ThingDef>
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilAmberSculptureLarge_DINOSAUA_Large" Abstract="True">
+  
+  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilLargeBase" Abstract="True">
 	<graphicData>
 	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <drawSize>(3.7,3.7)</drawSize>
 	</graphicData>
+    <placeWorkers>
+      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
+    </placeWorkers>
 	<costList>
 	  <BMT_FossilResource>122</BMT_FossilResource>
 	</costList>
@@ -274,7 +286,7 @@
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
 
   <!-- ONLY FOR TEST -->
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Small">
+  <ThingDef ParentName="BMT_FossilSmallBase">
 	<defName>BMT_FossilSmall_TEST</defName>
 	<label>dino fossils small</label>
 	<graphicData>
@@ -282,7 +294,8 @@
 	</graphicData>
     <designationCategory>Structure</designationCategory>
   </ThingDef>
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Medium">
+  
+  <ThingDef ParentName="BMT_FossilMediumBase">
 	<defName>BMT_FossilMedium_TEST</defName>
 	<label>dino fossils medium</label>
 	<graphicData>
@@ -290,7 +303,8 @@
 	</graphicData>
     <designationCategory>Structure</designationCategory>
   </ThingDef>
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA_Large">
+  
+  <ThingDef ParentName="BMT_FossilLargeBase">
 	<defName>BMT_FossilLarge_TEST</defName>
 	<label>dino fossils large</label>
 	<graphicData>
