@@ -21,6 +21,13 @@ namespace BMT_Fossils
                 {
                     num++;
                 }
+                else if (thing.def.tradeTags != null)
+                { 
+                    if (thing.def.tradeTags.Contains("BMT_FossilTrade"))
+                    {
+                        num++;
+                    }
+                }
             }
 
             return num * 5f;
