@@ -1,191 +1,224 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
-<!-- =================================== FOSSIL BASES ==========================================-->
-  <!-- Templates for future sculptures -->
-
-  <ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
-	<!-- <defName>BMT_FossilSculptureSmall</defName> -->
-	<label>medium displayable fossils</label>
-	<graphicData>
-	  <graphicClass>Graphic_Random</graphicClass>
-	  <texPath>BMT_Fossils/FossilsMedium</texPath>
-	</graphicData>
-	<costList>
-	  <BMT_FossilResource>50</BMT_FossilResource>
-	</costList>
-	<comps>
-	  <li Class="CompProperties_MeditationFocus">
-		<statDef>MeditationFocusStrength</statDef>
-		<focusTypes>
-		  <li>Morbid</li>
-		</focusTypes>
-		<offsets>
-		  <li Class="FocusStrengthOffset_Quality">
-			<curve>
-			  <points>
-				<li>(0,0.12)</li> <!-- awful -->
-				<li>(1,0.16)</li> <!-- poor -->
-				<li>(2,0.20)</li> <!-- normal -->
-				<li>(3,0.22)</li> <!-- good -->
-				<li>(4,0.24)</li> <!-- excellent -->
-				<li>(5,0.26)</li> <!-- masterwork -->
-				<li>(6,0.28)</li> <!-- legendary -->
-			  </points>
-			</curve>
-		  </li>
-		  <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
-			<defs>
-			  <li>BMT_FossilSculptureMedium</li>
-			</defs>
-			<radius>9.9</radius>
-			<maxBuildings>8</maxBuildings>
-			<focusPerQuality>
-			  <points>
-				<li>(0,0.0)</li> <!-- awful -->
-				<li>(1,0.0)</li> <!-- poor -->
-				<li>(2,0.01)</li> <!-- normal -->
-				<li>(3,0.01)</li> <!-- good -->
-				<li>(4,0.01)</li> <!-- excellent -->
-				<li>(5,0.02)</li> <!-- masterwork -->
-				<li>(6,0.02)</li> <!-- legendary -->
-			  </points>
-			</focusPerQuality>
-			<explanationKey>MeditationFocusPerSculpture</explanationKey>
-			<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
-		  </li>
-		</offsets>
-	  </li>
-	</comps>
-  </ThingDef>
-
-
-<!-- =========================================== SCULPTURES =============================================-->
-  <!-- RAND VERSION -->
-
-  <ThingDef ParentName="BMT_FossilSculptureMedBase">
-	<defName>BMT_FossilSculptureMedium</defName>
-	<label>medium displayable fossils</label>
-	<description>A torso-sized piece of fossil sculpted into an artistic form.</description>
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsMedium</texPath>
-	  <graphicClass>Graphic_Random</graphicClass>
-	  <drawSize>(1.4,1.4)</drawSize>
-	</graphicData>
-	<!-- <designationCategory>Production</designationCategory> -->
-  </ThingDef>
-
-  <!--================================ DINOSAUR BONES ======================================-->
-
-  <ThingDef ParentName="BMT_FossilAmberSculptureLargeBase" Name="BMT_FossilAmberSculptureLarge_DINOSAUA" Abstract="True">
-	<!-- <defName>BMT_FossilSculptureSmall</defName> -->
-	<label>dino fossils</label>
-	<description>Fossils glued together using secret blueprints.</description>	<!-- TEMP -->
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(2,2)</drawSize>
-	</graphicData>
-	<defaultPlacingRot>South</defaultPlacingRot>
-	<castEdgeShadows>false</castEdgeShadows>
-	<rotatable>true</rotatable>
-	<costList>
-	  <BMT_FossilResource>120</BMT_FossilResource>
-	</costList>
-	<comps>
-	  <li Class="CompProperties_MeditationFocus">
-		<statDef>MeditationFocusStrength</statDef>
-		<focusTypes>
-		  <li>Morbid</li>
-		</focusTypes>
-		<offsets>
-		  <li Class="FocusStrengthOffset_Quality">
-			<curve>
-			  <points>
-				<li>(0,0.12)</li> <!-- awful -->
-				<li>(1,0.16)</li> <!-- poor -->
-				<li>(2,0.20)</li> <!-- normal -->
-				<li>(3,0.22)</li> <!-- good -->
-				<li>(4,0.24)</li> <!-- excellent -->
-				<li>(5,0.26)</li> <!-- masterwork -->
-				<li>(6,0.28)</li> <!-- legendary -->
-			  </points>
-			</curve>
-		  </li>
-		  <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
-			<defs>
-			  <!-- Dino bone defs -->
-			  <!-- <li>BMT_FossilSmall_TEST</li> -->
-			  <!-- <li>BMT_FossilMedium_TEST</li> -->
-			  <!-- <li>BMT_FossilLarge_TEST</li> -->
-			</defs>
-			<radius>9.9</radius>
-			<maxBuildings>8</maxBuildings>
-			<focusPerQuality>
-			  <points>
-				<li>(0,0.0)</li> <!-- awful -->
-				<li>(1,0.0)</li> <!-- poor -->
-				<li>(2,0.01)</li> <!-- normal -->
-				<li>(3,0.01)</li> <!-- good -->
-				<li>(4,0.01)</li> <!-- excellent -->
-				<li>(5,0.02)</li> <!-- masterwork -->
-				<li>(6,0.02)</li> <!-- legendary -->
-			  </points>
-			</focusPerQuality>
-			<explanationKey>MeditationFocusPerSculpture</explanationKey>
-			<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
-		  </li>
-		</offsets>
-	  </li>
-	</comps>
-  </ThingDef>
-
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilSmallBase" Abstract="True">
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(1.7,1.7)</drawSize>
-	</graphicData>
-    <placeWorkers>
-      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
-    </placeWorkers>
-	<costList>
-	  <BMT_FossilResource>40</BMT_FossilResource>
-	</costList>
-	<size>(1,1)</size>
-  </ThingDef>
-  
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilMediumBase" Abstract="True">
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(2.7,2.7)</drawSize>
-	</graphicData>
-    <placeWorkers>
-      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
-    </placeWorkers>
-	<costList>
-	  <BMT_FossilResource>78</BMT_FossilResource>
-	</costList>
-	<size>(2,2)</size>
-  </ThingDef>
-  
-  <ThingDef ParentName="BMT_FossilAmberSculptureLarge_DINOSAUA" Name="BMT_FossilLargeBase" Abstract="True">
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
-	  <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(3.7,3.7)</drawSize>
-	</graphicData>
-    <placeWorkers>
-      <li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
-    </placeWorkers>
-	<costList>
-	  <BMT_FossilResource>122</BMT_FossilResource>
-	</costList>
-	<size>(3,3)</size>
-  </ThingDef>
-
+	<!-- =================================== FOSSIL BASES ==========================================-->
+	<!-- Templates for future sculptures -->
+	<ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
+		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
+		<label>medium displayable fossils</label>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_Fossils/FossilsMedium</texPath>
+		</graphicData>
+		<costList>
+			<BMT_FossilResource>50</BMT_FossilResource>
+		</costList>
+		<comps>
+			<li Class="BMT_Fossils.CompProperties_Display">
+				<museumPoints>0.6</museumPoints>
+				<isDisplay>true</isDisplay>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>BMT_FossilSculptureMedium</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- =========================================== SCULPTURES =============================================-->
+	<!-- RAND VERSION -->
+	<ThingDef ParentName="BMT_FossilSculptureMedBase">
+		<defName>BMT_FossilSculptureMedium</defName>
+		<label>medium displayable fossils</label>
+		<description>A torso-sized piece of fossil sculpted into an artistic form.</description>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsMedium</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
+		</graphicData>
+		<!-- <designationCategory>Production</designationCategory> -->
+	</ThingDef>
+	<!--================================ DINOSAUR BONES ======================================-->
+	<ThingDef ParentName="BMT_FossilAmberSculptureLargeBase"
+	          Name="BMT_FossilSculptureLargeBase"
+	          Abstract="True">
+		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
+		<label>dino fossils</label>
+		<description>Fossils glued together using secret blueprints.</description>
+		<!-- TEMP -->
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>true</rotatable>
+		<costList>
+			<BMT_FossilResource>120</BMT_FossilResource>
+		</costList>
+		<comps>
+			<li Class="BMT_Fossils.CompProperties_Display">
+				<museumPoints>2</museumPoints>
+				<isDisplay>true</isDisplay>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<!-- Dino bone defs -->
+							<!-- <li>BMT_FossilSmall_TEST</li> -->
+							<!-- <li>BMT_FossilMedium_TEST</li> -->
+							<!-- <li>BMT_FossilLarge_TEST</li> --></defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
+	          Name="BMT_FossilLarge1x1Base"
+	          Abstract="True">
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+		</graphicData>
+		<placeWorkers>
+			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
+		</placeWorkers>
+		<costList>
+			<BMT_FossilResource>40</BMT_FossilResource>
+		</costList>
+		<size>(1,1)</size>
+	</ThingDef>
+	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
+	          Name="BMT_FossilLarge2x2Base"
+	          Abstract="True">
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.7,2.7)</drawSize>
+		</graphicData>
+		<placeWorkers>
+			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
+		</placeWorkers>
+		<costList>
+			<BMT_FossilResource>78</BMT_FossilResource>
+		</costList>
+		<size>(2,2)</size>
+	</ThingDef>
+	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
+	          Name="BMT_FossilLarge3x3Base"
+	          Abstract="True">
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.7,3.7)</drawSize>
+		</graphicData>
+		<placeWorkers>
+			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
+		</placeWorkers>
+		<costList>
+			<BMT_FossilResource>122</BMT_FossilResource>
+		</costList>
+		<size>(3,3)</size>
+	</ThingDef>
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Ankylosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Brachiosaurus</texPath> -->
@@ -201,33 +234,29 @@
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Stegosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/TRex</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
-
-  <!-- ONLY FOR TEST -->
-  <ThingDef ParentName="BMT_FossilSmallBase">
-	<defName>BMT_FossilSmall_TEST</defName>
-	<label>dino fossils small</label>
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
-	</graphicData>
-    <designationCategory>Structure</designationCategory>
-  </ThingDef>
-  
-  <ThingDef ParentName="BMT_FossilMediumBase">
-	<defName>BMT_FossilMedium_TEST</defName>
-	<label>dino fossils medium</label>
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
-	</graphicData>
-    <designationCategory>Structure</designationCategory>
-  </ThingDef>
-  
-  <ThingDef ParentName="BMT_FossilLargeBase">
-	<defName>BMT_FossilLarge_TEST</defName>
-	<label>dino fossils large</label>
-	<graphicData>
-	  <texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
-	</graphicData>
-    <designationCategory>Structure</designationCategory>
-  </ThingDef>
-
+	<!-- ONLY FOR TEST -->
+	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+		<defName>BMT_FossilSmall_TEST</defName>
+		<label>dino fossils small</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+		</graphicData>
+		<designationCategory>Structure</designationCategory>
+	</ThingDef>
+	<ThingDef ParentName="BMT_FossilLarge2x2Base">
+		<defName>BMT_FossilMedium_TEST</defName>
+		<label>dino fossils medium</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+		</graphicData>
+		<designationCategory>Structure</designationCategory>
+	</ThingDef>
+	<ThingDef ParentName="BMT_FossilLarge3x3Base">
+		<defName>BMT_FossilLarge_TEST</defName>
+		<label>dino fossils large</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+		</graphicData>
+		<designationCategory>Structure</designationCategory>
+	</ThingDef>
 </Defs>
