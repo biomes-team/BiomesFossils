@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>BMT_FossilCategory</defName>
+      <label>fossils</label>
+      <parent>Buildings</parent>
+    </ThingCategoryDef>
+	
+	<DesignationCategoryDef>
+		<defName>BMT_Paleontology</defName>
+		<label>paleontology</label>
+		<order>275</order>
+		<specialDesignatorClasses>
+		  <li>Designator_Cancel</li>
+		  <li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	  </DesignationCategoryDef>
+	  
+</Defs>

@@ -21,9 +21,7 @@
 	<tradeTags>
 	  <li>BMT_FossilTrade</li>
 	</tradeTags>
-	<!-- <canOverlapZones>true</canOverlapZones> -->
-	<!-- = -->
-	<!-- <thingClass>Building_Storage</thingClass> -->
+	
 	<!-- <altitudeLayer>Building</altitudeLayer> -->
 	<passability>PassThroughOnly</passability>
 	<fillPercent>0.2</fillPercent>
@@ -41,6 +39,14 @@
 	  <Beauty>0</Beauty>
 	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 	</statBases>
+	<comps>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>0.5</museumPoints>
+			<isDisplay>false</isDisplay>
+			<isInfo>false</isInfo>
+		</li>
+	  <li Class="CompProperties_Styleable" />
+    </comps>
 	<building>
 	  <!-- <preventDeteriorationOnTop>true</preventDeteriorationOnTop> -->
 	  <!-- <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty> -->
@@ -76,9 +82,6 @@
 	<researchPrerequisites>
 	  <li>ComplexFurniture</li>
 	</researchPrerequisites>
-	<comps>
-	  <li Class="CompProperties_Styleable" />
-	</comps>
   </ThingDef>
 
   <!-- TEST -->

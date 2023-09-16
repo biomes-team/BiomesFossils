@@ -14,5 +14,8 @@ namespace BMT_Fossils
         public static ThingDef BMT_DisplaySmall;
         public static ThingDef BMT_DisplayMedium;
         public static ThingDef BMT_DisplayLarge;
+
+        public static RoomRoleDef BMT_Museum;
+        public static ThoughtDef BMT_VisitedMuseum;
     }
 }

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- =========================== MISC SUPPORTING DEFS ===================================== -->
+ <DesignatorDropdownGroupDef>
+    <defName>BMT_InfoSmall</defName>
+    <label>1x1 infographic</label>
+    <iconSource>Placed</iconSource>
+    <!-- <useGridMenu>true</useGridMenu>  -->
+  </DesignatorDropdownGroupDef>
+  
+   <DesignatorDropdownGroupDef>
+    <defName>BMT_InfoMed</defName>
+    <label>1x2 infographic</label>
+    <iconSource>Placed</iconSource>
+    <!-- <useGridMenu>true</useGridMenu> -->
+  </DesignatorDropdownGroupDef>
+  
+   <DesignatorDropdownGroupDef>
+    <defName>BMT_InfoLarge</defName>
+    <label>1x3 infographic</label>
+    <iconSource>Placed</iconSource>
+    <!-- <useGridMenu>true</useGridMenu> -->
+  </DesignatorDropdownGroupDef>
+  
+  
+  <!-- ================================== BASE DEFS ================================== -->
+
+	<ThingDef ParentName="FurnitureBase" Name="BMT_FossilInfoBase" Abstract="True">
+		<label>infographic</label>
+		<description>A table with information about dinosaurs, tilted up towards the viewer.</description>
+		<surfaceType>Item</surfaceType>
+		<fillPercent>0.4</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<uiOrder>2900</uiOrder>
+		<designationCategory>BMT_Paleontology</designationCategory>
+		<graphicData>
+			<!-- <texPath>Things/Building/Furniture/EndTable</texPath> -->
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<pathCost>30</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<!-- <costStuffCount>0</costStuffCount>  -->
+		<!-- <placeWorkers> -->
+		<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+		<!-- </placeWorkers> -->
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>BMT_Paleontology</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="BMT_Fossils.CompProperties_Display">
+				<museumPoints>0.1</museumPoints>
+				<isDisplay>false</isDisplay>
+				<isInfo>true</isInfo>
+			</li>
+		</comps>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BMT_FossilInfoBase" Name="BMT_FossilInfoSmallBase" Abstract="True">
+		<label>infographic</label>
+		<description>A table with information about dinosaurs, tilted up towards the viewer.</description>
+		<surfaceType>Item</surfaceType>
+		<uiOrder>2900</uiOrder>
+		<graphicData>
+			<drawSize>(1.8,1.8)</drawSize>
+			<!-- <texPath>Things/Building/Furniture/EndTable</texPath> -->
+		</graphicData>
+		<uiIconScale>0.7</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+		</statBases>
+		 <designatorDropdown>BMT_InfoSmall</designatorDropdown>
+		<costList>
+			<Steel>30</Steel>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilInfoBase" Name="BMT_FossilInfoMedBase" Abstract="True">
+		<label>infographic</label>
+		<description>A table with information about dinosaurs, tilted up towards the viewer.</description>
+		<surfaceType>Item</surfaceType>
+		<uiOrder>2900</uiOrder>
+		<graphicData>
+			<drawSize>(3.6,3.6)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		 <designatorDropdown>BMT_InfoMed</designatorDropdown>
+		<costList>
+			<Steel>60</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_FossilInfoBase" Name="BMT_FossilInfoLargeBase" Abstract="True">
+		<label>infographic</label>
+		<description>A table with information about dinosaurs, tilted up towards the viewer.</description>
+		<surfaceType>Item</surfaceType>
+		<uiOrder>2900</uiOrder>
+		<graphicData>
+			<drawSize>(3.6,3.6)</drawSize>
+		</graphicData>
+		<size>(3,1)</size>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>140</WorkToBuild>
+		</statBases>
+		 <designatorDropdown>BMT_InfoLarge</designatorDropdown>
+		<costList>
+			<Steel>90</Steel>
+		</costList>
+	</ThingDef>
+
+
+<!-- ======================== SMALL INFOGRAPHICS ================================ -->
+
+<ThingDef ParentName="BMT_FossilInfoSmallBase">
+	<defName>BMT_FossilInfo1Footprints</defName>
+	<description>A sign explaining how much we can learn from fossil footprints.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/1Footprints/FossilInfoFootprints</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoSmallBase">
+	<defName>BMT_FossilInfo1Shell</defName>
+	<description>A sign about fossilized ammonites.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/1Shell/FossilInfoShell</texPath>
+	</graphicData>
+</ThingDef>
+
+ <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
+	 <defName>BMT_FossilInfo1TriSkull</defName> 
+	<description>A sign about triceratops.</description>
+	 <graphicData> 
+		 <texPath>BMT_Fossils/Info/1TriSkull/FossilInfoTriSkull</texPath> 
+	 </graphicData> 
+ </ThingDef> 
+
+<!-- ======================== MEDIUM INFOGRAPHICS ================================ -->
+
+<ThingDef ParentName="BMT_FossilInfoMedBase">
+	<defName>BMT_FossilInfo2Dna</defName>
+	<description>A sign showing how the first genespliced dinosaurs were made.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/2Dna/FossilInfoDna</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoMedBase">
+	<defName>BMT_FossilInfo2Footprints</defName>
+	<description>A sign comparing different dinosaur footprints.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/2Footprints/FossilInfoFootprints2</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoMedBase">
+	<defName>BMT_FossilInfo2Road</defName>
+	<description>An infographic about dinosaur evolution.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/2Road/FossilInfoRoad</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoMedBase">
+	<defName>BMT_FossilInfo2Trex</defName>
+	<description>A sign all about the fearsome tyrannosaurus rex.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/2Trex/FossilInfoTrex</texPath>
+	</graphicData>
+</ThingDef>
+
+
+<!-- ======================== LARGE INFOGRAPHICS ================================ -->
+
+<ThingDef ParentName="BMT_FossilInfoLargeBase">
+	<defName>BMT_FossilInfo3Cycle</defName>
+	<description>A sign showing the life cycle of a dinosaur.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/3Cycle/FossilInfoCycle</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoLargeBase">
+	<defName>BMT_FossilInfo3Dying</defName>
+	<description>A sign showing how a dinosaur becomes a fossil.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/3Dying/FossilInfoDying</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoLargeBase">
+	<defName>BMT_FossilInfo3Footprints</defName>
+	<description>A sign showing evolution of dinosaur feet.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/3Footprints/FossilInfoFootprints3</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoLargeBase">
+	<defName>BMT_FossilInfo3Measured</defName>
+	<description>A sign showing one of the biggest dinosaurs.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/3Measured/FossilInfoMeasured</texPath>
+	</graphicData>
+</ThingDef>
+
+</Defs>

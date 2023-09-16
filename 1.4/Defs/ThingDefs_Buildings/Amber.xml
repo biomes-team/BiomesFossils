@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- =================================== AMBER BASES ==========================================-->
+  <ThingDef ParentName="BuildingBase" Name="BMT_FossilAmberSculptureBase" Abstract="True">
+	<thingClass>Building_Art</thingClass>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<useHitPoints>true</useHitPoints>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+	  <li>BMT_FossilCategory</li>
+	</thingCategories>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<statBases>
+	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <MeditationFocusStrength>0.0</MeditationFocusStrength>
+	</statBases>
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>1</museumPoints>
+			<isDisplay>true</isDisplay>
+		</li>
+	  <li Class="CompProperties_Styleable"></li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+	</placeWorkers>
+	<inspectorTabs>
+	  <li>ITab_Art</li>
+	</inspectorTabs>
+	<tradeTags>
+	  <li>Art</li>
+	  <li>BMT_FossilTrade</li>
+	</tradeTags>
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Artistic</workSkill>
+	  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	  <effectWorking>Sculpt</effectWorking>
+	  <soundWorking>Recipe_Sculpt</soundWorking>
+	  <recipeUsers>
+		<li>BMT_TablePaleontology</li>
+	  </recipeUsers>
+	  <defaultIngredientFilter>
+		<categories>
+		  <li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+		  <li>Gold</li>
+		  <li>Silver</li>
+		  <li>Plasteel</li>
+		  <li>Jade</li>
+		  <li>Uranium</li>
+		</disallowedThingDefs>
+	  </defaultIngredientFilter>
+	</recipeMaker>
+	<ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+	<ritualFocus>
+	  <spectateDistance>2</spectateDistance>
+	  <allowedSpectateSides>Down</allowedSpectateSides>
+	</ritualFocus>
+	<building>
+	  <paintable>true</paintable>
+	</building>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureMedBase" Abstract="True">
+	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
+	<label>medium displayable amber</label>
+	<description>A torso-sized piece of material sculpted into an artistic form.</description>
+	<graphicData>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <texPath>Things/Building/Art/SculptureSmall</texPath>
+	  <drawSize>(3,3)</drawSize>
+	</graphicData>
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>0.5</museumPoints>
+			<isDisplay>true</isDisplay>
+		</li>
+	  <li Class="CompProperties_Styleable"></li>
+	</comps>
+	<fillPercent>0.35</fillPercent>
+	<rotatable>false</rotatable>
+	<statBases>
+	  <MaxHitPoints>90</MaxHitPoints>
+	  <Mass>3</Mass>
+	  <Beauty>50</Beauty>
+	  <WorkToMake>18000</WorkToMake>
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+	</statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureLargeBase" Abstract="True">
+	<!-- <defName>SculptureLarge</defName> -->
+	<label>large displayable amber</label>
+	<description>A person-sized piece of material sculpted into an artistic form.</description>
+	<castEdgeShadows>true</castEdgeShadows>
+	<graphicData>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <texPath>Things/Building/Art/SculptureLarge</texPath>
+	  <drawSize>(3,3)</drawSize>
+	</graphicData>
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>2</museumPoints>
+			<isDisplay>true</isDisplay>
+		</li>
+	  <li Class="CompProperties_Styleable"></li>
+	</comps>
+	<fillPercent>0.5</fillPercent>
+	<rotatable>false</rotatable>
+	<statBases>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <Mass>7</Mass>
+	  <Beauty>100</Beauty>
+	  <WorkToMake>30000</WorkToMake>
+	  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+	</statBases>
+	<!-- <stuffCategories> -->
+	  <!-- <li>Metallic</li> -->
+	  <!-- <li>Woody</li> -->
+	  <!-- <li>Stony</li> -->
+	<!-- </stuffCategories> -->
+	<!-- <costStuffCount>100</costStuffCount> -->
+  </ThingDef>
+
+  <!--================================ Sculptures ======================================-->
+  <!-- Templates for future sculptures -->
+
+  <ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_AmberSculptureSmallBase" Abstract="True">
+	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
+	<label>medium displayable amber</label>
+	<graphicData>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <texPath>BMT_Fossils/AmberMedium</texPath>
+	</graphicData>
+	<costList>
+	  <BMT_AmberResource>50</BMT_AmberResource>
+	</costList>
+	<comps>
+	  <li Class="CompProperties_MeditationFocus">
+		<statDef>MeditationFocusStrength</statDef>
+		<focusTypes>
+		  <li>Artistic</li>
+		</focusTypes>
+		<offsets>
+		  <li Class="FocusStrengthOffset_Quality">
+			<curve>
+			  <points>
+				<li>(0,0.12)</li> <!-- awful -->
+				<li>(1,0.16)</li> <!-- poor -->
+				<li>(2,0.20)</li> <!-- normal -->
+				<li>(3,0.22)</li> <!-- good -->
+				<li>(4,0.24)</li> <!-- excellent -->
+				<li>(5,0.26)</li> <!-- masterwork -->
+				<li>(6,0.28)</li> <!-- legendary -->
+			  </points>
+			</curve>
+		  </li>
+		  <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+			<defs>
+			  <li>BMT_AmberSculptureMedium</li>
+			</defs>
+			<radius>9.9</radius>
+			<maxBuildings>8</maxBuildings>
+			<focusPerQuality>
+			  <points>
+				<li>(0,0.0)</li> <!-- awful -->
+				<li>(1,0.0)</li> <!-- poor -->
+				<li>(2,0.01)</li> <!-- normal -->
+				<li>(3,0.01)</li> <!-- good -->
+				<li>(4,0.01)</li> <!-- excellent -->
+				<li>(5,0.02)</li> <!-- masterwork -->
+				<li>(6,0.02)</li> <!-- legendary -->
+			  </points>
+			</focusPerQuality>
+			<explanationKey>MeditationFocusPerSculpture</explanationKey>
+			<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+		  </li>
+		</offsets>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <!-- RAND VERSION -->
+  <ThingDef ParentName="BMT_AmberSculptureSmallBase">
+	<defName>BMT_AmberSculptureMedium</defName>
+	<label>medium displayable amber</label>
+	<description>A torso-sized piece of amber sculpted into an artistic form.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/AmberMedium</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>(2.8,2.8)</drawSize>
+	</graphicData>
+	<!-- <designationCategory>Production</designationCategory> -->
+  </ThingDef>
+
+  <!-- Amber -->
+  <!-- <ThingDef ParentName="BMT_AmberSculptureSmallBase"> -->
+	<!-- <defName>BMT_SculptureMediumAmber_A</defName> -->
+	<!-- <label>medium displayable amber TEST</label> -->
+	<!-- <graphicData> -->
+	  <!-- <graphicClass>Graphic_Single</graphicClass> -->
+	  <!-- <texPath>BMT_Fossils/AmberMedium/SculptureMediumAmber_A</texPath> -->
+	<!-- </graphicData> -->
+  <!-- </ThingDef> -->
+
+
+
+</Defs>

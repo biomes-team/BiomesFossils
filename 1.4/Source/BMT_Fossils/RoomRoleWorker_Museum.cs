@@ -11,23 +11,28 @@ namespace BMT_Fossils
     {
         public override float GetScore(Room room)
         {
-            int num = 0;
+            float num = 0;
             List<Thing> containedThings = room.ContainedAndAdjacentThings;
 
             for (int i = 0; i < containedThings.Count; i++)
             {
                 Thing thing = containedThings[i];
-                if (thing.HasThingCategory(ThingCategoryDef.Named("BMT_FossilCategory")))
+                if(thing.TryGetComp<CompDisplay>() != null)
                 {
-                    num++;
+                    num += thing.TryGetComp<CompDisplay>().Props.museumPoints;
                 }
-                else if (thing.def.tradeTags != null)
-                { 
-                    if (thing.def.tradeTags.Contains("BMT_FossilTrade"))
-                    {
-                        num++;
-                    }
-                }
+                
+                //if (thing.HasThingCategory(ThingCategoryDef.Named("BMT_FossilCategory")))
+                //{
+                //    num++;
+                //}
+                //else if (thing.def.tradeTags != null)
+                //{ 
+                //    if (thing.def.tradeTags.Contains("BMT_FossilTrade"))
+                //    {
+                //        num++;
+                //    }
+                //}
             }
 
             return num * 5f;
