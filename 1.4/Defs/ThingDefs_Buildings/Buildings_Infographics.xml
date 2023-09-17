@@ -156,6 +156,14 @@
 		 <texPath>BMT_Fossils/Info/1TriSkull/FossilInfoTriSkull</texPath> 
 	 </graphicData> 
  </ThingDef> 
+ 
+ <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
+	 <defName>BMT_FossilInfo1Fern</defName> 
+	<description>A sign about ancient plants.</description>
+	 <graphicData> 
+		 <texPath>BMT_Fossils/Info/1Fern/FossilInfoFern</texPath> 
+	 </graphicData> 
+ </ThingDef> 
 
 <!-- ======================== MEDIUM INFOGRAPHICS ================================ -->
 
@@ -223,6 +231,14 @@
 	<description>A sign showing one of the biggest dinosaurs.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Measured/FossilInfoMeasured</texPath>
+	</graphicData>
+</ThingDef>
+
+<ThingDef ParentName="BMT_FossilInfoLargeBase">
+	<defName>BMT_FossilInfo3Cloning</defName>
+	<description>A sign explaining the cloning process.</description>
+	<graphicData>
+		<texPath>BMT_Fossils/Info/3Cloning/FossilInfoCloning</texPath>
 	</graphicData>
 </ThingDef>
 

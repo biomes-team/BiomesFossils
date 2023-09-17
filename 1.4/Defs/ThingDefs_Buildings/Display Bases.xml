@@ -107,7 +107,7 @@
 	<label>medium display</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplayMedium/MedStand</texPath>
-	  <drawSize>(3.0,3.0)</drawSize>
+	  <drawSize>(4,4)</drawSize>
 	</graphicData>
 	<uiIconScale>0.5</uiIconScale>
 	<costStuffCount>46</costStuffCount>
@@ -116,7 +116,7 @@
 	  <Mass>7</Mass>
 	  <WorkToBuild>1250</WorkToBuild>
 	</statBases>
-	<size>(2,2)</size>
+	<size>(2,3)</size>
   </ThingDef>
 
   <ThingDef ParentName="BMT_FossilDisplayBase">
@@ -124,7 +124,7 @@
 	<label>large display</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplayLarge/LargeStand</texPath>
-	  <drawSize>(3.7,3.7)</drawSize>
+	  <drawSize>(5,5)</drawSize>
 	</graphicData>
 	<uiIconScale>0.5</uiIconScale>
 	<costStuffCount>78</costStuffCount>
@@ -133,7 +133,7 @@
 	  <Mass>12</Mass>
 	  <WorkToBuild>2250</WorkToBuild>
 	</statBases>
-	<size>(3,3)</size>
+	<size>(3,4)</size>
   </ThingDef>
 
 

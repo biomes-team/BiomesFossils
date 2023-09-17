@@ -20,6 +20,16 @@ namespace BMT_Fossils
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
+
+			CompProperties_Display propDisp = TargetA.Thing.def.GetCompProperties<CompProperties_Display>();
+
+
+
+			//TargetA.CenterVector3;
+
+			//yeild return Toils_Goto();
+			//yield return Toils_Goto.GotoCell(TargetIndex.B, PathEndMode.OnCell);
+
 			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
 			Toil toil = Toils_General.Wait(job.def.joyDuration);
 			toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);

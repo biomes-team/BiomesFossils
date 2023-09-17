@@ -193,7 +193,7 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.7,2.7)</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
@@ -201,7 +201,7 @@
 		<costList>
 			<BMT_FossilResource>78</BMT_FossilResource>
 		</costList>
-		<size>(2,2)</size>
+		<size>(2,3)</size>
 	</ThingDef>
 	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
 	          Name="BMT_FossilLarge3x3Base"
@@ -209,7 +209,7 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.7,3.7)</drawSize>
+			<drawSize>(5,5)</drawSize>
 		</graphicData>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
@@ -217,7 +217,7 @@
 		<costList>
 			<BMT_FossilResource>122</BMT_FossilResource>
 		</costList>
-		<size>(3,3)</size>
+		<size>(3,4)</size>
 	</ThingDef>
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Ankylosaurus</texPath> -->

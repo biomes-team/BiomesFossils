@@ -30,7 +30,7 @@ namespace BMT_Fossils
 					CompDisplay compDisplay = thing.TryGetComp<CompDisplay>();
 					if (compDisplay == null)
 					{
-						Log.Error("No CompArt on thing being considered for viewing: " + thing);
+						//Log.Error("No CompDisplay on thing being considered for viewing: " + thing);
 						return false;
 					}
 					if (!compDisplay.Props.canBeMuseumViewed)
@@ -57,3 +57,4 @@ namespace BMT_Fossils
 		}
 	}
 }
+  
