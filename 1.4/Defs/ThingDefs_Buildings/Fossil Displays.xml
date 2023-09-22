@@ -238,7 +238,7 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,5)</drawSize>
+			<drawSize>(10,10)</drawSize>
 		</graphicData>
 		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge3</designatorDropdown>
