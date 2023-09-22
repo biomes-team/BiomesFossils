@@ -204,6 +204,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.7,1.7)</drawSize>
 		</graphicData>
+		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge1</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
@@ -222,6 +223,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge2</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
@@ -238,6 +240,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
+		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge3</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
@@ -264,31 +267,128 @@
 	<!-- <texPath>BMT_Fossils/FossilsLarge/TRex</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
 	
-	<!-- ONLY FOR TEST -->
+<!-- ===================== SMALL ========================== -->
 	<ThingDef ParentName="BMT_FossilLarge1x1Base">
-		<defName>BMT_FossilSmall_TEST</defName>
-		<label>dino fossils small</label>
+		<defName>BMT_SkeleSmallRaptor</defName>
+		<label>raptor skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Raptor/Dessicated_Raptor</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+		<defName>BMT_SkeleSmallPteranodon</defName>
+		<label>pteranodon skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Pteranodon/Dessicated_Pteranodon</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+		<defName>BMT_SkeleSmallOviraptor</defName>
+		<label>oviraptor skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Oviraptor/Dessicated_Oviraptor</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+		<defName>BMT_SkeleSmallGallimimus</defName>
+		<label>gallimimus skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Gallimimus/Dessicated_Gallimimus</texPath>
+		</graphicData>
+	</ThingDef>
+	
+<!-- ===================== MEDIUM ========================== -->
+		
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedAllosaurus</defName>
+		<label>allosaurus skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
 		</graphicData>
-		<designationCategory>BMT_Paleontology</designationCategory>
 	</ThingDef>
 	
 	<ThingDef ParentName="BMT_FossilLarge2x3Base">
-		<defName>BMT_FossilMedium_TEST</defName>
-		<label>dino fossils medium</label>
+		<defName>BMT_SkeleMedElasmosaurus</defName>
+		<label>elasmosaurus skeleton</label>
 		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+			<texPath>BMT_Fossils/FossilsLarge/Elasmosaurus/Dessicated_Elasmosaurus</texPath>
 		</graphicData>
-		<designationCategory>BMT_Paleontology</designationCategory>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedIguanodon</defName>
+		<label>iguanodon skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Iguanodon/Dessicated_Iguanodon</texPath>
+		</graphicData>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedParasaur</defName>
+		<label>parasaur skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Parasaur/Dessicated_Parasaur</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedStegosaurus</defName>
+		<label>Stegosaurus skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Stegosaurus/Dessicated_Stegosaurus</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedTriceratops</defName>
+		<label>Triceratops skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Triceratops/Dessicated_Triceratops</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+		<defName>BMT_SkeleMedAnkylosaurus</defName>
+		<label>Ankylosaurus skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Ankylosaurus/Dessicated_Ankylosaurus</texPath>
+		</graphicData>
+	</ThingDef>
+	
+<!-- ===================== LARGE ========================== -->
+	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+		<defName>BMT_SkeleLargeBrachiosaurus</defName>
+		<label>brachiosaurus skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Brachiosaurus/Dessicated_Brachiosaurus</texPath>
+		</graphicData>
 	</ThingDef>
 	
 	<ThingDef ParentName="BMT_FossilLarge3x4Base">
-		<defName>BMT_FossilLarge_TEST</defName>
-		<label>dino fossils large</label>
+		<defName>BMT_SkeleLargeMosasaurus</defName>
+		<label>mosasaurus skeleton</label>
 		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+			<texPath>BMT_Fossils/FossilsLarge/Mosasaurus/Dessicated_Mosasaurus</texPath>
 		</graphicData>
-		<designationCategory>BMT_Paleontology</designationCategory>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+		<defName>BMT_SkeleLargeSpino</defName>
+		<label>Spino skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Spino/Dessicated_Spino</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+		<defName>BMT_SkeleLargeTrex</defName>
+		<label>Trex skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/TRex/Dessicated_TyrannosaurusRex</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>
