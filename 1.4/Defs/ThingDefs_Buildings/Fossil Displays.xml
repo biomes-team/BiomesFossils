@@ -5,6 +5,8 @@
 	<ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>medium displayable fossils</label>
+		
+		<designationCategory>BMT_Paleontology</designationCategory>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
@@ -88,6 +90,28 @@
 		</graphicData>
 		<!-- <designationCategory>Production</designationCategory> -->
 	</ThingDef>
+	
+	
+	<!--================================ LARGE FOSSIL CATEGORIES ======================================-->
+<DesignatorDropdownGroupDef>
+    <defName>BMT_FossilLarge1</defName>
+    <label>small skeleton</label>
+    <iconSource>Placed</iconSource>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>BMT_FossilLarge2</defName>
+    <label>medium skeleton</label>
+    <iconSource>Placed</iconSource>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>BMT_FossilLarge3</defName>
+    <label>large skeleton</label>
+    <iconSource>Placed</iconSource>
+  </DesignatorDropdownGroupDef>
+  
+	
 	<!--================================ DINOSAUR BONES ======================================-->
 	<ThingDef ParentName="BMT_FossilAmberSculptureLargeBase"
 	          Name="BMT_FossilSculptureLargeBase"
@@ -171,6 +195,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
 	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
 	          Name="BMT_FossilLarge1x1Base"
 	          Abstract="True">
@@ -179,6 +204,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.7,1.7)</drawSize>
 		</graphicData>
+		 <designatorDropdown>BMT_FossilLarge1</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
 		</placeWorkers>
@@ -187,14 +213,16 @@
 		</costList>
 		<size>(1,1)</size>
 	</ThingDef>
+	
 	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
-	          Name="BMT_FossilLarge2x2Base"
+	          Name="BMT_FossilLarge2x3Base"
 	          Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		 <designatorDropdown>BMT_FossilLarge2</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
 		</placeWorkers>
@@ -203,14 +231,14 @@
 		</costList>
 		<size>(2,3)</size>
 	</ThingDef>
-	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
-	          Name="BMT_FossilLarge3x3Base"
-	          Abstract="True">
+	
+	<ThingDef ParentName="BMT_FossilSculptureLargeBase" Name="BMT_FossilLarge3x4Base" Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
+		 <designatorDropdown>BMT_FossilLarge3</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
 		</placeWorkers>
@@ -219,6 +247,7 @@
 		</costList>
 		<size>(3,4)</size>
 	</ThingDef>
+	
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Ankylosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Brachiosaurus</texPath> -->
@@ -234,6 +263,7 @@
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Stegosaurus</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/TRex</texPath> -->
 	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
+	
 	<!-- ONLY FOR TEST -->
 	<ThingDef ParentName="BMT_FossilLarge1x1Base">
 		<defName>BMT_FossilSmall_TEST</defName>
@@ -241,22 +271,24 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
 		</graphicData>
-		<designationCategory>Structure</designationCategory>
+		<designationCategory>BMT_Paleontology</designationCategory>
 	</ThingDef>
-	<ThingDef ParentName="BMT_FossilLarge2x2Base">
+	
+	<ThingDef ParentName="BMT_FossilLarge2x3Base">
 		<defName>BMT_FossilMedium_TEST</defName>
 		<label>dino fossils medium</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
 		</graphicData>
-		<designationCategory>Structure</designationCategory>
+		<designationCategory>BMT_Paleontology</designationCategory>
 	</ThingDef>
-	<ThingDef ParentName="BMT_FossilLarge3x3Base">
+	
+	<ThingDef ParentName="BMT_FossilLarge3x4Base">
 		<defName>BMT_FossilLarge_TEST</defName>
 		<label>dino fossils large</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
 		</graphicData>
-		<designationCategory>Structure</designationCategory>
+		<designationCategory>BMT_Paleontology</designationCategory>
 	</ThingDef>
 </Defs>

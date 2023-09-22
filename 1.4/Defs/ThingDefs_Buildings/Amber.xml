@@ -12,6 +12,7 @@
 	<thingCategories>
 	  <li>BMT_FossilCategory</li>
 	</thingCategories>
+	<designationCategory>BMT_Paleontology</designationCategory>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 	<statBases>
 	  <Flammability>1.0</Flammability>
