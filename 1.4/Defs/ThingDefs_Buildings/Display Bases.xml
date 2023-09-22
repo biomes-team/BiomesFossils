@@ -9,6 +9,7 @@
 	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	</graphicData>
+	<designationCategory>BMT_Paleontology</designationCategory>
 	<!-- = -->
 	<altitudeLayer>FloorCoverings</altitudeLayer>
 	<blockPlants>true</blockPlants>
@@ -32,8 +33,7 @@
 	  <li>Woody</li>
 	  <li>Stony</li>
 	</stuffCategories>
-	<!-- <defaultPlacingRot>South</defaultPlacingRot> -->
-	<defaultPlacingRot>North</defaultPlacingRot>
+	<defaultPlacingRot>South</defaultPlacingRot>
 	<statBases>
 	  <Flammability>1.0</Flammability>
 	  <Beauty>0</Beauty>
@@ -92,6 +92,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
 	  <drawSize>(1.5,1.5)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<costStuffCount>25</costStuffCount>
 	<statBases>
@@ -108,6 +109,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplayMedium/MedStand</texPath>
 	  <drawSize>(4,4)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<uiIconScale>0.5</uiIconScale>
 	<costStuffCount>46</costStuffCount>
@@ -125,6 +127,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplayLarge/LargeStand</texPath>
 	  <drawSize>(5,5)</drawSize>
+	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<uiIconScale>0.5</uiIconScale>
 	<costStuffCount>78</costStuffCount>
