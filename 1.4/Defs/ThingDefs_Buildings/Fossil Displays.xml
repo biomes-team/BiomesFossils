@@ -10,7 +10,9 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
+			<color>(135,116,99)</color>
 		</graphicData>
+		<size>(2,1)</size>
 		<costList>
 			<BMT_FossilResource>50</BMT_FossilResource>
 		</costList>
@@ -86,7 +88,7 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(1.4,1.4)</drawSize>
+			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<!-- <designationCategory>Production</designationCategory> -->
 	</ThingDef>
