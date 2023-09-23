@@ -135,6 +135,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoSmallBase">
 	<defName>BMT_FossilInfo1Footprints</defName>
+		<label>footprints sign</label>
 	<description>A sign explaining how much we can learn from fossil footprints.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/1Footprints/FossilInfoFootprints</texPath>
@@ -143,6 +144,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoSmallBase">
 	<defName>BMT_FossilInfo1Shell</defName>
+		<label>shell sign</label>
 	<description>A sign about fossilized ammonites.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/1Shell/FossilInfoShell</texPath>
@@ -151,6 +153,7 @@
 
  <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
 	 <defName>BMT_FossilInfo1TriSkull</defName> 
+		<label>triceratops sign</label>
 	<description>A sign about triceratops.</description>
 	 <graphicData> 
 		 <texPath>BMT_Fossils/Info/1TriSkull/FossilInfoTriSkull</texPath> 
@@ -159,6 +162,7 @@
  
  <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
 	 <defName>BMT_FossilInfo1Fern</defName> 
+		<label>fern sign</label>
 	<description>A sign about ancient plants.</description>
 	 <graphicData> 
 		 <texPath>BMT_Fossils/Info/1Fern/FossilInfoFern</texPath> 
@@ -167,6 +171,7 @@
  
   <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
 	 <defName>BMT_FossilInfo1Leaelly</defName> 
+		<label>skeleton sign</label>
 	<description>A sign showcasing an ancient creature.</description>
 	 <graphicData> 
 		 <texPath>BMT_Fossils/Info/1Leaelly/FossilInfoLeaelly</texPath> 
@@ -176,6 +181,7 @@
  
  <ThingDef ParentName="BMT_FossilInfoSmallBase"> 
 	 <defName>BMT_FossilInfo1Text</defName> 
+		<label>text sign</label>
 	<description>A sign about dinosaurs.</description>
 	 <graphicData> 
 		 <texPath>BMT_Fossils/Info/1Text/FossilInfoText</texPath> 
@@ -187,6 +193,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Dna</defName>
+		<label>cloning sign</label>
 	<description>A sign showing how the first genespliced dinosaurs were made.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Dna/FossilInfoDna</texPath>
@@ -195,6 +202,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Footprints</defName>
+		<label>footprints sign</label>
 	<description>A sign comparing different dinosaur footprints.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Footprints/FossilInfoFootprints2</texPath>
@@ -203,6 +211,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Road</defName>
+		<label>evolution sign</label>
 	<description>An infographic about dinosaur evolution.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Road/FossilInfoRoad</texPath>
@@ -211,6 +220,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Trex</defName>
+		<label>t-rex sign</label>
 	<description>A sign all about the fearsome tyrannosaurus rex.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Trex/FossilInfoTrex</texPath>
@@ -219,6 +229,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Gallimimus</defName>
+		<label>gallimimus sign</label>
 	<description>A sign all about the gallimimus.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Gallimimus/FossilInfoGallimimus</texPath>
@@ -227,6 +238,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Mosa</defName>
+		<label>mosasaurus sign</label>
 	<description>A sign about a huge prehistoric sea creature.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Mosa/FossilInfoMosa</texPath>
@@ -235,6 +247,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Plants</defName>
+		<label>plants sign</label>
 	<description>A sign all about ancient plants.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Plants/FossilInfoPlants</texPath>
@@ -245,6 +258,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Cycle</defName>
+		<label>life cycle sign</label>
 	<description>A sign showing the life cycle of a dinosaur.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Cycle/FossilInfoCycle</texPath>
@@ -253,6 +267,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Dying</defName>
+		<label>fossilization sign</label>
 	<description>A sign showing how a dinosaur becomes a fossil.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Dying/FossilInfoDying</texPath>
@@ -261,6 +276,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Footprints</defName>
+		<label>footprints sign</label>
 	<description>A sign showing evolution of dinosaur feet.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Footprints/FossilInfoFootprints3</texPath>
@@ -269,6 +285,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Raptors</defName>
+		<label>raptors sign</label>
 	<description>A sign showing members of the raptor family.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Raptors/FossilInfoRaptors</texPath>
@@ -277,6 +294,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Measured</defName>
+		<label>brachiosaur sign</label>
 	<description>A sign showing one of the biggest dinosaurs.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Measured/FossilInfoMeasured</texPath>
@@ -285,6 +303,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Cloning</defName>
+		<label>cloning sign</label>
 	<description>A sign explaining the cloning process.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Cloning/FossilInfoCloning</texPath>
@@ -294,6 +313,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Ankleo</defName>
+		<label>ankleosaur sign</label>
 	<description>A sign showing the ankleosaur and related dinosaurs.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Ankleo/FossilInfoAnkleo</texPath>
