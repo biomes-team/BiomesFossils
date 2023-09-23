@@ -38,7 +38,7 @@ namespace BMT_Fossils
             CellRect viewRect = GenAdj.OccupiedRect(parent.Position, parent.Rotation, new IntVec2((int)(parent.def.size.x + 2 * Props.maxViewDistance), (int)(parent.def.size.z + 2 * Props.maxViewDistance)));
             List<IntVec3> cells = viewRect.Cells.ToList();
 
-            Log.Message(parent.def.defName + " has " + cells.Count() + " viewable cells centered at " + parent.Position.x + ", " + parent.Position.z);
+            //Log.Message(parent.def.defName + " has " + cells.Count() + " viewable cells centered at " + parent.Position.x + ", " + parent.Position.z);
 
             IntVec3 viewCell = new IntVec3(0,0,0);
             if(cells.Count >= 1)
@@ -48,7 +48,7 @@ namespace BMT_Fossils
             }
             viewCell = cells.RandomElement();
 
-            Log.Message("selected view cell: " + viewCell.x + ", " + viewCell.z);
+            //Log.Message("selected view cell: " + viewCell.x + ", " + viewCell.z);
 
             return viewCell;
         }
