@@ -88,7 +88,8 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
 		</graphicData>
 		<!-- <designationCategory>Production</designationCategory> -->
 	</ThingDef>
