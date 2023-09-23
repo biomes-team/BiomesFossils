@@ -16,6 +16,7 @@ namespace BMT_Fossils
 		public float maxViewDistance = 3f;
 		public bool isDisplay = true;
 		public bool isInfo = false;
+		public bool viewFromFront = false;
 
 		public float linkedMultiplier = 1.2f;
 		public int maxSimlutaneous = 1;

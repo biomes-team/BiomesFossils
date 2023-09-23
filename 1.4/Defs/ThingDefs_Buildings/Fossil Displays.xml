@@ -21,7 +21,7 @@
 				<museumPoints>0.6</museumPoints>
 				<isDisplay>true</isDisplay>
 			</li>
-			<li Class="CompProperties_Styleable"/>
+			<!-- <li Class="CompProperties_Styleable"/> -->
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
@@ -204,7 +204,8 @@
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1.7,1.7)</drawSize>
+			<!-- <drawSize>(1.7,1.7)</drawSize> -->
+			<drawSize>(2.3,2.3)</drawSize>
 		</graphicData>
 		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge1</designatorDropdown>

@@ -32,7 +32,7 @@
 			<museumPoints>1</museumPoints>
 			<isDisplay>true</isDisplay>
 		</li>
-	  <li Class="CompProperties_Styleable"></li>
+	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
 	<placeWorkers>
 	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
@@ -98,7 +98,7 @@
 			<museumPoints>0.5</museumPoints>
 			<isDisplay>true</isDisplay>
 		</li>
-	  <li Class="CompProperties_Styleable"></li>
+	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
 	<fillPercent>0.35</fillPercent>
 	<rotatable>false</rotatable>
@@ -134,7 +134,7 @@
 			<museumPoints>2</museumPoints>
 			<isDisplay>true</isDisplay>
 		</li>
-	  <li Class="CompProperties_Styleable"></li>
+	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
 	<fillPercent>0.5</fillPercent>
 	<rotatable>false</rotatable>

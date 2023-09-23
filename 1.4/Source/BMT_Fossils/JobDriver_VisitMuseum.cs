@@ -12,6 +12,8 @@ namespace BMT_Fossils
     public class JobDriver_VisitMuseum : JobDriver
     {
 
+
+
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
 		{
 			return pawn.Reserve(job.GetTarget(TargetIndex.A), job, 1, -1, null, errorOnFailed);
@@ -21,28 +23,50 @@ namespace BMT_Fossils
 		{
 			this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
 
-			CompProperties_Display propDisp = TargetA.Thing.def.GetCompProperties<CompProperties_Display>();
+            Toil goToil = Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.OnCell);
+   //         IntVec3 viewCell = job.targetA.Thing.TryGetComp<CompDisplay>().GetViewCell(pawn);
+			//Toil goToil = Toils_Goto.GotoCell(job.targetA.Thing.TryGetComp<CompDisplay>().GetViewCell(pawn), PathEndMode.OnCell);
 
+			yield return goToil;
 
-
-			//TargetA.CenterVector3;
-
-			//yeild return Toils_Goto();
-			//yield return Toils_Goto.GotoCell(TargetIndex.B, PathEndMode.OnCell);
-
-			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
-			Toil toil = Toils_General.Wait(job.def.joyDuration);
-			toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
-			toil.tickAction = delegate
+			
+			Toil toil = ToilMaker.MakeToil("MakeNewToils");
+			toil.initAction = delegate
 			{
-				WaitTickAction();
+				if (job.targetQueueA.Count > 0)
+				{
+					LocalTargetInfo targetA = job.targetQueueA[0];
+					job.targetQueueA.RemoveAt(0);
+					job.targetA = targetA;
+					Log.Message("Target is " + job.targetA.Cell.x + ", " + job.targetA.Cell.z);
+					JumpToToil(goToil);
+					
+				}
 			};
+			yield return toil;
+
+			//toil.tickAction = delegate
+			//{
+			//	WaitTickAction();
+			//};
 			toil.AddFinishAction(delegate
 			{
 				TryGainMuseumThought(pawn);
 			});
 			yield return toil;
-		}
+
+			//Toil toil = Toils_General.Wait(job.def.joyDuration);
+   //         toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+   //         toil.tickAction = delegate
+   //         {
+   //             WaitTickAction();
+   //         };
+   //         toil.AddFinishAction(delegate
+   //         {
+   //             TryGainMuseumThought(pawn);
+   //         });
+   //         yield return toil;
+        }
 
 
 		private Thing MuseumThing => job.GetTarget(TargetIndex.A).Thing;
