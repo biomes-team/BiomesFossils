@@ -205,7 +205,7 @@
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<!-- <drawSize>(1.7,1.7)</drawSize> -->
-			<drawSize>(2.3,2.3)</drawSize>
+			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
 		<designationCategory>BMT_Paleontology</designationCategory>
 		 <designatorDropdown>BMT_FossilLarge1</designatorDropdown>
@@ -318,6 +318,7 @@
 		<label>elasmosaurus skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Elasmosaurus/Dessicated_Elasmosaurus</texPath>
+			<drawSize>(5.5,5.5)</drawSize>
 		</graphicData>
 	</ThingDef>
 	
@@ -326,6 +327,7 @@
 		<label>iguanodon skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Iguanodon/Dessicated_Iguanodon</texPath>
+			<drawSize>(5.2,5.2)</drawSize>
 		</graphicData>
 	</ThingDef>
 
@@ -335,6 +337,7 @@
 		<label>parasaur skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Parasaur/Dessicated_Parasaur</texPath>
+			<drawSize>(4.8,4.8)</drawSize>
 		</graphicData>
 	</ThingDef>
 	
@@ -384,6 +387,7 @@
 		<label>Spino skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Spino/Dessicated_Spino</texPath>
+			<drawSize>(12,12)</drawSize>
 		</graphicData>
 	</ThingDef>
 	
@@ -392,6 +396,7 @@
 		<label>Trex skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/TRex/Dessicated_TyrannosaurusRex</texPath>
+			<drawSize>(13,13)</drawSize>
 		</graphicData>
 	</ThingDef>
 </Defs>
