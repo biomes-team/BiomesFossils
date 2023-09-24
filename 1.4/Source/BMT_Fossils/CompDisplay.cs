@@ -36,19 +36,23 @@ namespace BMT_Fossils
         public IntVec3 GetViewCell(Pawn pawn)
         {
             CellRect viewRect = GenAdj.OccupiedRect(parent.Position, parent.Rotation, new IntVec2((int)(parent.def.size.x + 2 * Props.maxViewDistance), (int)(parent.def.size.z + 2 * Props.maxViewDistance)));
-            List<IntVec3> cells = viewRect.Cells.ToList();
-
-            //Log.Message(parent.def.defName + " has " + cells.Count() + " viewable cells centered at " + parent.Position.x + ", " + parent.Position.z);
+            
+            //if (Props.viewFromFront)
+            //{
+            //    IntVec3 center = parent.Position;
+            //    GenAdj.AdjustForRotation(center, new IntVec2(parent.def.size.x, (int)Props.maxViewDistance), parent.Rotation);
+                
+            //}
+            
+            
+            List<IntVec3> cells = viewRect.Cells.Where(c => c.GetRoom(parent.Map) == parent.GetRoom()).ToList();
+            cells = cells.Where(x => !PawnUtility.KnownDangerAt(x, pawn.Map, pawn) && !x.GetTerrain(pawn.Map).avoidWander && x.Standable(pawn.Map)).ToList();
 
             IntVec3 viewCell = new IntVec3(0,0,0);
             if(cells.Count >= 1)
             {
-                cells = cells.Where(x => !PawnUtility.KnownDangerAt(x, pawn.Map, pawn) && !x.GetTerrain(pawn.Map).avoidWander && x.Standable(pawn.Map)).ToList();
-
+                viewCell = cells.RandomElement();
             }
-            viewCell = cells.RandomElement();
-
-            //Log.Message("selected view cell: " + viewCell.x + ", " + viewCell.z);
 
             return viewCell;
         }

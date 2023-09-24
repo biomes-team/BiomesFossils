@@ -32,7 +32,6 @@ namespace BMT_Fossils
 					CompDisplay compDisplay = thing.TryGetComp<CompDisplay>();
 					if (compDisplay == null)
 					{
-						//Log.Error("No CompDisplay on thing being considered for viewing: " + thing);
 						return false;
 					}
 					if (!compDisplay.Props.canBeMuseumViewed)
@@ -44,6 +43,10 @@ namespace BMT_Fossils
 					{
 						return false;
 					}
+					if (compDisplay.GetViewCell(pawn) == new IntVec3(0,0,0))
+                    {
+						return false;
+                    }
 					return (room.Role == FossilsDefOf.BMT_Museum) ? true : false;
 				}));
 				if (!candidates.TryRandomElementByWeight((Thing target) => Mathf.Max(target.GetStatValue(StatDefOf.Beauty), 0.5f), out var result))
@@ -68,7 +71,7 @@ namespace BMT_Fossils
 						job.targetQueueA.Add(exhibits[i]);
 					}
 				}
-				job.locomotionUrgency = LocomotionUrgency.Walk;
+				//job.locomotionUrgency = LocomotionUrgency.Walk;
 
 				return job;
 			}

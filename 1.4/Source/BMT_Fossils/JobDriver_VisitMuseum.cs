@@ -11,9 +11,6 @@ namespace BMT_Fossils
 {
     public class JobDriver_VisitMuseum : JobDriver
     {
-
-
-
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
 		{
 			return pawn.Reserve(job.GetTarget(TargetIndex.A), job, 1, -1, null, errorOnFailed);
@@ -23,12 +20,14 @@ namespace BMT_Fossils
 		{
 			this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
 
+			Toil goToil = ToilMaker.MakeToil("GotoCell");
+			goToil.initAction = delegate
+            {
+				goToil.actor.pather.StartPath(job.targetA.Thing.TryGetComp<CompDisplay>().GetViewCell(pawn), PathEndMode.OnCell);
+			};
+			goToil.defaultCompleteMode = ToilCompleteMode.PatherArrival;
 
-            IntVec3 viewCell = job.targetA.Thing.TryGetComp<CompDisplay>().GetViewCell(pawn);
-            Toil goToil = Toils_Goto.GotoCell(viewCell, PathEndMode.OnCell);
-
-            yield return goToil;
-
+			yield return goToil;
 
             Toil wait = Toils_General.Wait(1000);
             wait.tickAction = delegate
@@ -46,32 +45,13 @@ namespace BMT_Fossils
 			{
 				if (job.targetQueueA.Count > 0)
 				{
-					LocalTargetInfo targetA = job.targetQueueA[0];
-					job.targetQueueA.RemoveAt(0);
-					job.targetA = targetA;
+                    LocalTargetInfo targetA = job.targetQueueA[0];
+                    job.targetQueueA.RemoveAt(0);
+                    job.targetA = targetA;
                     JumpToToil(goToil);
                 }
 			};
 			yield return goToExhibitToil;
-
-			//goToExhibitToil.AddFinishAction(delegate
-			//{
-			//	TryGainMuseumThought(pawn);
-			//});
-			//yield return goToExhibitToil;
-
-			//Toil toil = Toils_General.Wait(job.def.joyDuration);
-			////toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
-			//toil.tickAction = delegate
-			//{
-			//    WaitTickAction();
-			//};
-			//toil.AddFinishAction(delegate
-			//{
-			//    TryGainMuseumThought(pawn);
-			//});
-			//yield return toil;
-
 
 		}
 
@@ -87,12 +67,12 @@ namespace BMT_Fossils
 
 			//JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.EndJob, extraJoyGainFactor, (Building)MuseumThing);
 			pawn.needs.joy?.GainJoy(extraJoyGainFactor *  0.36f / 2500f, JoyKindDefOf.Meditative);
-			//Need_Joy joy = pawn.needs.joy;
-			//if (joy != null && joy.CurLevel > 0.9999f )
-			//{
-			//	pawn.jobs.curDriver.EndJobWith(JobCondition.Succeeded);
-			//}
-		}
+            Need_Joy joy = pawn.needs.joy;
+            if (joy != null && joy.CurLevel > 0.9999f)
+            {
+                pawn.jobs.curDriver.EndJobWith(JobCondition.Succeeded);
+            }
+        }
 
 
 		public static void TryGainMuseumThought(Pawn pawn)

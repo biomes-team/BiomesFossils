@@ -44,6 +44,7 @@
 			<museumPoints>0.5</museumPoints>
 			<isDisplay>false</isDisplay>
 			<isInfo>false</isInfo>
+			<canBeMuseumViewed>false</canBeMuseumViewed>
 		</li>
 	  <li Class="CompProperties_Styleable" />
     </comps>
