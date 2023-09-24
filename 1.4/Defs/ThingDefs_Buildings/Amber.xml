@@ -78,7 +78,7 @@
 
   <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureMedBase" Abstract="True">
 	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
-	<label>medium displayable amber</label>
+	<label>medium amber</label>
 	<description>A torso-sized piece of material sculpted into an artistic form.</description>
 	<graphicData>
 	  <graphicClass>Graphic_Random</graphicClass>
@@ -113,7 +113,7 @@
 
   <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureLargeBase" Abstract="True">
 	<!-- <defName>SculptureLarge</defName> -->
-	<label>large displayable amber</label>
+	<label>large amber</label>
 	<description>A person-sized piece of material sculpted into an artistic form.</description>
 	<castEdgeShadows>true</castEdgeShadows>
 	<graphicData>
@@ -158,10 +158,10 @@
 
   <ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_AmberSculptureSmallBase" Abstract="True">
 	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
-	<label>medium displayable amber</label>
+	<label>small amber</label>
 	<graphicData>
 	  <graphicClass>Graphic_Random</graphicClass>
-	  <texPath>BMT_Fossils/AmberMedium</texPath>
+	  <texPath>BMT_Fossils/AmberSmall</texPath>
 	</graphicData>
 	<costList>
 	  <BMT_AmberResource>50</BMT_AmberResource>
@@ -214,7 +214,7 @@
   <!-- RAND VERSION -->
   <ThingDef ParentName="BMT_AmberSculptureSmallBase">
 	<defName>BMT_AmberSculptureMedium</defName>
-	<label>medium displayable amber</label>
+	<label>medium amber</label>
 	<description>A torso-sized piece of amber sculpted into an artistic form.</description>
 	<graphicData>
 	  <texPath>BMT_Fossils/AmberMedium</texPath>

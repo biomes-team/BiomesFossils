@@ -4,7 +4,7 @@
 	<!-- Templates for future sculptures -->
 	<ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
-		<label>medium displayable fossils</label>
+		<label>medium fossil</label>
 		
 		<designationCategory>BMT_Paleontology</designationCategory>
 		<graphicData>
@@ -83,7 +83,7 @@
 	<!-- RAND VERSION -->
 	<ThingDef ParentName="BMT_FossilSculptureMedBase">
 		<defName>BMT_FossilSculptureMedium</defName>
-		<label>medium displayable fossils</label>
+		<label>medium fossil</label>
 		<description>A torso-sized piece of fossil sculpted into an artistic form.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
