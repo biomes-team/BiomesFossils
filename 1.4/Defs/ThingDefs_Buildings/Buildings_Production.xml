@@ -40,7 +40,7 @@
 	  <Cleanliness>-5</Cleanliness>
 	</statBases>
 	<size>(3,1)</size>
-	<designationCategory>Production</designationCategory>
+	<designationCategory>BMT_Paleontology</designationCategory>
 	<passability>PassThroughOnly</passability>
 	<pathCost>50</pathCost>
 	<hasInteractionCell>True</hasInteractionCell>

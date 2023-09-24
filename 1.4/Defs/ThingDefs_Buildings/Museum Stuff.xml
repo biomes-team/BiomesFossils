@@ -7,6 +7,7 @@
     <description>A lightweight velvet rope, to discourage visitors from getting too close to the displays. Not very sturdy.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
+	<designationCategory>BMT_Paleontology</designationCategory>
     <graphicData>
       <texPath>BMT_Fossils/VelvetRope/VelvetRope_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -55,7 +56,6 @@
     <neverMultiSelect>true</neverMultiSelect>
     <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Structure</designationCategory>
     <uiOrder>2020</uiOrder>
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
@@ -76,5 +76,44 @@
       <paintable>true</paintable>
     </building>
   </ThingDef>
+ 
+
+   <ThingDef ParentName="LampBase" >
+    <defName>BMT_DisplayLight</defName>
+    <label>display light</label>
+    <description>A small light for hilighting museum displays. Not suitable for lighting a room.</description>
+	<graphicData>
+      <texPath>BMT_Fossils/DisplayLight/DisplayLight</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(0.85,0.85)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>8</Steel>
+    </costList>
+    <statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+    <rotatable>true</rotatable>
+	<designationCategory>BMT_Paleontology</designationCategory>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.5</glowRadius>
+        <glowColor>(182,123,80,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+	 <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+  </ThingDef>
+  
   
 </Defs>
