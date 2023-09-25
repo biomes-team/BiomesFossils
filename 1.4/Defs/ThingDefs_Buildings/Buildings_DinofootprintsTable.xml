@@ -149,7 +149,7 @@
 	  <texPath>BMT_Fossils/Footprints/DinofootprintsTable/DinoFootprintsTableSlab</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
-	  <drawSize>(3,2)</drawSize>
+	  <drawSize>(4.9,2.9)</drawSize>
 	</graphicData>
 	<uiIconScale>0.8</uiIconScale>
 	<statBases>
@@ -157,7 +157,7 @@
 	  <WorkToBuild>750</WorkToBuild>
 	  <Mass>5</Mass>
 	</statBases>
-	<size>(2,1)</size>
+	<size>(3,1)</size>
 	<costStuffCount>52</costStuffCount>
   </ThingDef>
 

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase" Name="BMT_DioramasBase" Abstract="True">
-	<description>An ordinary diorama of the area.</description>
+	<description>A large diorama of a prehistoric environment reproduced in immaculate detail.</description>
 	<thingClass>Building_Art</thingClass>
 	<altitudeLayer>Building</altitudeLayer>
 	<passability>PassThroughOnly</passability>
@@ -17,6 +17,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/Dioramas/DioramaCoast</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawRotated>false</drawRotated>
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3.0,3.0)</drawSize>
 	  <shadowData>

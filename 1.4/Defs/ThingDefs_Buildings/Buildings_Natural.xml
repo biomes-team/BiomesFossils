@@ -5,7 +5,7 @@
 		<label>amber</label>
 		<description>Rock containing bits of amber.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>BMT_Fossils/Ores/amber_colored_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(125,95,0)</color>
@@ -28,7 +28,7 @@
 		<label>fossils</label>
 		<description>Rock containing fossils.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>BMT_Fossils/Ores/fossil_colored_atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(174,159,145)</color>
