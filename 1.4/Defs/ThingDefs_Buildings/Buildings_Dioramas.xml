@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase" Name="BMT_DioramasBase" Abstract="True">
+	<description>An ordinary diorama of the area.</description>
+	<thingClass>Building_Art</thingClass>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<useHitPoints>true</useHitPoints>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+	  <li>BMT_FossilCategory</li>
+	</thingCategories>
+	<!-- <designationCategory>BMT_Paleontology</designationCategory> -->
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<graphicData>
+	  <texPath>BMT_Fossils/Dioramas/DioramaCoast</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(3.0,3.0)</drawSize>
+	  <shadowData>
+		<volume>(1.6, 0.3, 1.6)</volume>
+		<offset>(0, 0, -0.15)</offset>
+	  </shadowData>
+	</graphicData>
+	<size>(2,2)</size>
+	<statBases>
+	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <MeditationFocusStrength>0.02</MeditationFocusStrength>
+	  <Mass>5</Mass>
+	  <WorkToMake>15000</WorkToMake>
+	  <WorkToBuild>15000</WorkToBuild>
+	</statBases>
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
+	  <li Class="BMT_Fossils.CompProperties_Display">
+		<museumPoints>1</museumPoints>
+		<isDisplay>true</isDisplay>
+	  </li>
+	  <!-- <li Class="CompProperties_Styleable"></li> -->
+	  <li Class="CompProperties_MeditationFocus">
+		<statDef>MeditationFocusStrength</statDef>
+		<focusTypes>
+		  <li>Artistic</li>
+		</focusTypes>
+		<offsets>
+		  <li Class="FocusStrengthOffset_Quality">
+			<curve>
+			  <points>
+				<li>(0,0.12)</li> <!-- awful -->
+				<li>(1,0.16)</li> <!-- poor -->
+				<li>(2,0.20)</li> <!-- normal -->
+				<li>(3,0.22)</li> <!-- good -->
+				<li>(4,0.24)</li> <!-- excellent -->
+				<li>(5,0.26)</li> <!-- masterwork -->
+				<li>(6,0.28)</li> <!-- legendary -->
+			  </points>
+			</curve>
+		  </li>
+		  <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+			<defs>
+			  <li>BMT_DioramaCoast</li>
+			  <li>BMT_DioramaPlains</li>
+			  <li>BMT_DioramaValley</li>
+			</defs>
+			<radius>9.9</radius>
+			<maxBuildings>8</maxBuildings>
+			<focusPerQuality>
+			  <points>
+				<li>(0,0.0)</li> <!-- awful -->
+				<li>(1,0.0)</li> <!-- poor -->
+				<li>(2,0.01)</li> <!-- normal -->
+				<li>(3,0.01)</li> <!-- good -->
+				<li>(4,0.01)</li> <!-- excellent -->
+				<li>(5,0.02)</li> <!-- masterwork -->
+				<li>(6,0.02)</li> <!-- legendary -->
+			  </points>
+			</focusPerQuality>
+			<explanationKey>MeditationFocusPerSculpture</explanationKey>
+			<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+		  </li>
+		</offsets>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+	</placeWorkers>
+	<inspectorTabs>
+	  <li>ITab_Art</li>
+	</inspectorTabs>
+	<tradeTags>
+	  <li>Art</li>
+	  <li>BMT_FossilTrade</li>
+	</tradeTags>
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Artistic</workSkill>
+	  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	  <effectWorking>Sculpt</effectWorking>
+	  <soundWorking>Recipe_Sculpt</soundWorking>
+	  <recipeUsers>
+		<li>TableSculpting</li>
+	  </recipeUsers>
+	  <defaultIngredientFilter>
+		<categories>
+		  <li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+		  <li>Gold</li>
+		  <li>Silver</li>
+		  <li>Plasteel</li>
+		  <li>Jade</li>
+		  <li>Uranium</li>
+		</disallowedThingDefs>
+	  </defaultIngredientFilter>
+	</recipeMaker>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+	  <li>Metallic</li>
+	  <li>Woody</li>
+	</stuffCategories>
+	<ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+	<ritualFocus>
+	  <spectateDistance>2</spectateDistance>
+	  <allowedSpectateSides>Down</allowedSpectateSides>
+	</ritualFocus>
+	<building>
+	  <paintable>true</paintable>
+	</building>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_DioramasBase">
+	<defName>BMT_DioramaCoast</defName>
+	<label>diorama coast</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Dioramas/DioramaCoast</texPath>
+	</graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BMT_DioramasBase">
+	<defName>BMT_DioramaPlains</defName>
+	<label>diorama plains</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Dioramas/DioramaPlains</texPath>
+	</graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BMT_DioramasBase">
+	<defName>BMT_DioramaValley</defName>
+	<label>diorama valley</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Dioramas/DioramaValley</texPath>
+	</graphicData>
+  </ThingDef>
+
+</Defs>
