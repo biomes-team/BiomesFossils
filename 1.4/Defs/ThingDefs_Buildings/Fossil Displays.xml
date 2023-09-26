@@ -20,6 +20,7 @@
 			<li Class="BMT_Fossils.CompProperties_Display">
 				<museumPoints>0.6</museumPoints>
 				<isDisplay>true</isDisplay>
+				<maxViewDistance>2</maxViewDistance>
 			</li>
 			<!-- <li Class="CompProperties_Styleable"/> -->
 			<li Class="CompProperties_MeditationFocus">
@@ -116,9 +117,7 @@
   
 	
 	<!--================================ DINOSAUR BONES ======================================-->
-	<ThingDef ParentName="BMT_FossilAmberSculptureLargeBase"
-	          Name="BMT_FossilSculptureLargeBase"
-	          Abstract="True">
+	<ThingDef ParentName="BMT_FossilAmberSculptureLargeBase" Name="BMT_FossilSculptureLargeBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>dino fossils</label>
 		<description>Fossils glued together using secret blueprints.</description>
@@ -199,9 +198,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
-	          Name="BMT_FossilLarge1x1Base"
-	          Abstract="True">
+	<ThingDef ParentName="BMT_FossilSculptureLargeBase" Name="BMT_FossilLarge1x1Base" Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -217,6 +214,14 @@
 			<BMT_FossilResource>40</BMT_FossilResource>
 		</costList>
 		<size>(1,1)</size>
+		<comps>
+			<li Class="BMT_Fossils.CompProperties_Display">
+				<museumPoints>2</museumPoints>
+				<isDisplay>true</isDisplay>
+				<maxViewDistance>2</maxViewDistance>
+			</li>
+			
+		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
@@ -255,21 +260,6 @@
 		<size>(3,4)</size>
 	</ThingDef>
 	
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Ankylosaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Brachiosaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Elasmosaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Gallimimus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Iguanodon</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Mosasaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Oviraptor</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Parasaur</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Pteranodon</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Raptor</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Spino</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Stegosaurus</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/TRex</texPath> -->
-	<!-- <texPath>BMT_Fossils/FossilsLarge/Triceratops</texPath> -->
 	
 <!-- ===================== SMALL ========================== -->
 	<ThingDef ParentName="BMT_FossilLarge1x1Base">

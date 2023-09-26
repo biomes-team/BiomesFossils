@@ -20,6 +20,7 @@
 	  <drawRotated>false</drawRotated>
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3.0,3.0)</drawSize>
+	  <drawOffset>(0,0,0.1)</drawOffset>
 	  <shadowData>
 		<volume>(1.6, 0.3, 1.6)</volume>
 		<offset>(0, 0, -0.15)</offset>
@@ -46,6 +47,7 @@
 	  <li Class="BMT_Fossils.CompProperties_Display">
 		<museumPoints>1</museumPoints>
 		<isDisplay>true</isDisplay>
+		<maxViewDistance>1</maxViewDistance>
 	  </li>
 	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	  <li Class="CompProperties_MeditationFocus">

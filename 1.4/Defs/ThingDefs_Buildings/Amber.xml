@@ -31,6 +31,7 @@
 		<li Class="BMT_Fossils.CompProperties_Display">
 			<museumPoints>1</museumPoints>
 			<isDisplay>true</isDisplay>
+			<maxViewDistance>2</maxViewDistance>
 		</li>
 	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
@@ -97,6 +98,7 @@
 		<li Class="BMT_Fossils.CompProperties_Display">
 			<museumPoints>0.5</museumPoints>
 			<isDisplay>true</isDisplay>
+			<maxViewDistance>2</maxViewDistance>
 		</li>
 	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
