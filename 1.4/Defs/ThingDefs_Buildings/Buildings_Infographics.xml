@@ -60,6 +60,7 @@
 				<isDisplay>false</isDisplay>
 				<isInfo>true</isInfo>
 				<maxViewDistance>1</maxViewDistance>
+				<viewFromFront>true</viewFromFront>
 			</li>
 		</comps>
 		<staticSunShadowHeight>0</staticSunShadowHeight>

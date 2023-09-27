@@ -112,7 +112,7 @@
 	  <drawSize>(4,4)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
-	<uiIconScale>0.5</uiIconScale>
+	<!-- <uiIconScale>0.5</uiIconScale> -->
 	<costStuffCount>46</costStuffCount>
 	<statBases>
 	  <MaxHitPoints>75</MaxHitPoints> 
@@ -130,7 +130,7 @@
 	  <drawSize>(5,5)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
-	<uiIconScale>0.5</uiIconScale>
+	<!-- <uiIconScale>0.5</uiIconScale> -->
 	<costStuffCount>78</costStuffCount>
 	<statBases>
 	  <MaxHitPoints>150</MaxHitPoints> 

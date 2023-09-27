@@ -2,7 +2,7 @@
 <Defs>
 	<!-- =================================== FOSSIL BASES ==========================================-->
 	<!-- Templates for future sculptures -->
-	<ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
+	<ThingDef ParentName="BMT_AmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>medium fossil</label>
 		
@@ -21,6 +21,7 @@
 				<museumPoints>0.6</museumPoints>
 				<isDisplay>true</isDisplay>
 				<maxViewDistance>2</maxViewDistance>
+				<viewFromFront>true</viewFromFront>
 			</li>
 			<!-- <li Class="CompProperties_Styleable"/> -->
 			<li Class="CompProperties_MeditationFocus">
@@ -92,32 +93,34 @@
 			<drawSize>(2,2)</drawSize>
 			<drawOffset>(0,0,0.5)</drawOffset>
 		</graphicData>
+		<uiIconOffset>(0, -0.15)</uiIconOffset>
+		<uiIconScale>1.1</uiIconScale>
 		<!-- <designationCategory>Production</designationCategory> -->
 	</ThingDef>
 	
 	
-	<!--================================ LARGE FOSSIL CATEGORIES ======================================-->
+	<!--================================ SKELETON CATEGORIES ======================================-->
 <DesignatorDropdownGroupDef>
-    <defName>BMT_FossilLarge1</defName>
+    <defName>BMT_SkeleSmall</defName>
     <label>small skeleton</label>
     <iconSource>Placed</iconSource>
   </DesignatorDropdownGroupDef>
   
   <DesignatorDropdownGroupDef>
-    <defName>BMT_FossilLarge2</defName>
+    <defName>BMT_SkeleMed</defName>
     <label>medium skeleton</label>
     <iconSource>Placed</iconSource>
   </DesignatorDropdownGroupDef>
   
   <DesignatorDropdownGroupDef>
-    <defName>BMT_FossilLarge3</defName>
+    <defName>BMT_SkeleLarge</defName>
     <label>large skeleton</label>
     <iconSource>Placed</iconSource>
   </DesignatorDropdownGroupDef>
   
 	
-	<!--================================ DINOSAUR BONES ======================================-->
-	<ThingDef ParentName="BMT_FossilAmberSculptureLargeBase" Name="BMT_FossilSculptureLargeBase" Abstract="True">
+	<!--================================ DINOSAUR SKELETONS ======================================-->
+	<ThingDef ParentName="BMT_FossilSculptureBase" Name="BMT_DisplaySkeletonBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>dino fossils</label>
 		<description>Fossils glued together using secret blueprints.</description>
@@ -163,7 +166,7 @@
 								<!-- legendary -->
 							</points>
 						</curve>
-</li>
+					</li>
 					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
 						<defs>
 							<!-- Dino bone defs -->
@@ -198,15 +201,23 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilSculptureLargeBase" Name="BMT_FossilLarge1x1Base" Abstract="True">
+	<ThingDef ParentName="BMT_DisplaySkeletonBase" Name="BMT_DisplaySkeleSmallBase" Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<!-- <drawSize>(1.7,1.7)</drawSize> -->
 			<drawSize>(2.5,2.5)</drawSize>
 		</graphicData>
+		<uiIconScale>0.70</uiIconScale>
 		<designationCategory>BMT_Paleontology</designationCategory>
-		 <designatorDropdown>BMT_FossilLarge1</designatorDropdown>
+		 <designatorDropdown>BMT_SkeleSmall</designatorDropdown>
+		<statBases>
+		  <MaxHitPoints>90</MaxHitPoints>
+		  <Mass>3</Mass>
+		  <Beauty>50</Beauty>
+		  <WorkToMake>18000</WorkToMake>
+		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
 		</placeWorkers>
@@ -220,20 +231,19 @@
 				<isDisplay>true</isDisplay>
 				<maxViewDistance>2</maxViewDistance>
 			</li>
-			
 		</comps>
+		
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilSculptureLargeBase"
-	          Name="BMT_FossilLarge2x3Base"
-	          Abstract="True">
+	<ThingDef ParentName="BMT_DisplaySkeletonBase" Name="BMT_DisplaySkeleMedBase" Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<uiIconScale>1.3</uiIconScale>
 		<designationCategory>BMT_Paleontology</designationCategory>
-		 <designatorDropdown>BMT_FossilLarge2</designatorDropdown>
+		 <designatorDropdown>BMT_SkeleMed</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
 		</placeWorkers>
@@ -241,16 +251,24 @@
 			<BMT_FossilResource>78</BMT_FossilResource>
 		</costList>
 		<size>(2,3)</size>
+		<statBases>
+		  <MaxHitPoints>90</MaxHitPoints>
+		  <Mass>5</Mass>
+		  <Beauty>80</Beauty>
+		  <WorkToMake>24000</WorkToMake>
+		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilSculptureLargeBase" Name="BMT_FossilLarge3x4Base" Abstract="True">
+	<ThingDef ParentName="BMT_DisplaySkeletonBase" Name="BMT_DisplaySkeleLargeBase" Abstract="True">
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(10,10)</drawSize>
 		</graphicData>
 		<designationCategory>BMT_Paleontology</designationCategory>
-		 <designatorDropdown>BMT_FossilLarge3</designatorDropdown>
+		 <designatorDropdown>BMT_SkeleLarge</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
 		</placeWorkers>
@@ -258,11 +276,18 @@
 			<BMT_FossilResource>122</BMT_FossilResource>
 		</costList>
 		<size>(3,4)</size>
+		<statBases>
+		  <MaxHitPoints>150</MaxHitPoints>
+		  <Mass>7</Mass>
+		  <Beauty>100</Beauty>
+		  <WorkToMake>30000</WorkToMake>
+		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+		</statBases>
 	</ThingDef>
 	
 	
 <!-- ===================== SMALL ========================== -->
-	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallRaptor</defName>
 		<label>raptor skeleton</label>
 		<graphicData>
@@ -270,7 +295,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallPteranodon</defName>
 		<label>pteranodon skeleton</label>
 		<graphicData>
@@ -278,7 +303,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallOviraptor</defName>
 		<label>oviraptor skeleton</label>
 		<graphicData>
@@ -286,7 +311,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge1x1Base">
+	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallGallimimus</defName>
 		<label>gallimimus skeleton</label>
 		<graphicData>
@@ -296,7 +321,7 @@
 	
 <!-- ===================== MEDIUM ========================== -->
 		
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedAllosaurus</defName>
 		<label>allosaurus skeleton</label>
 		<graphicData>
@@ -304,7 +329,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedElasmosaurus</defName>
 		<label>elasmosaurus skeleton</label>
 		<graphicData>
@@ -313,7 +338,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedIguanodon</defName>
 		<label>iguanodon skeleton</label>
 		<graphicData>
@@ -323,7 +348,7 @@
 	</ThingDef>
 
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedParasaur</defName>
 		<label>parasaur skeleton</label>
 		<graphicData>
@@ -332,7 +357,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedStegosaurus</defName>
 		<label>Stegosaurus skeleton</label>
 		<graphicData>
@@ -340,7 +365,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedTriceratops</defName>
 		<label>Triceratops skeleton</label>
 		<graphicData>
@@ -348,7 +373,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge2x3Base">
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedAnkylosaurus</defName>
 		<label>Ankylosaurus skeleton</label>
 		<graphicData>
@@ -357,7 +382,7 @@
 	</ThingDef>
 	
 <!-- ===================== LARGE ========================== -->
-	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeBrachiosaurus</defName>
 		<label>brachiosaurus skeleton</label>
 		<graphicData>
@@ -365,7 +390,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeMosasaurus</defName>
 		<label>mosasaurus skeleton</label>
 		<graphicData>
@@ -373,7 +398,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeSpino</defName>
 		<label>Spino skeleton</label>
 		<graphicData>
@@ -382,7 +407,7 @@
 		</graphicData>
 	</ThingDef>
 	
-	<ThingDef ParentName="BMT_FossilLarge3x4Base">
+	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeTrex</defName>
 		<label>Trex skeleton</label>
 		<graphicData>

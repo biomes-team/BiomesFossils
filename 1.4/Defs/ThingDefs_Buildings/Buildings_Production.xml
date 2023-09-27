@@ -22,6 +22,7 @@
 		<cornerBR>Damage/Corner</cornerBR>
 	  </damageData>
 	</graphicData>
+	<uiIconOffset>(0, -0.05)</uiIconOffset>
 	<costList>
 	  <Steel>35</Steel>
 	</costList>

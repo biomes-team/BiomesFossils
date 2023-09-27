@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- =================================== AMBER BASES ==========================================-->
-  <ThingDef ParentName="BuildingBase" Name="BMT_FossilAmberSculptureBase" Abstract="True">
+  <ThingDef ParentName="BuildingBase" Name="BMT_FossilSculptureBase" Abstract="True">
 	<thingClass>Building_Art</thingClass>
 	<altitudeLayer>Building</altitudeLayer>
 	<passability>PassThroughOnly</passability>
@@ -77,7 +77,7 @@
 	</building>
   </ThingDef>
 
-  <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureMedBase" Abstract="True">
+  <ThingDef ParentName="BMT_FossilSculptureBase" Name="BMT_AmberSculptureMedBase" Abstract="True">
 	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
 	<label>medium amber</label>
 	<description>A torso-sized piece of material sculpted into an artistic form.</description>
@@ -86,6 +86,7 @@
 	  <texPath>Things/Building/Art/SculptureSmall</texPath>
 	  <drawSize>(3,3)</drawSize>
 	</graphicData>
+	<uiIconScale>0.80</uiIconScale>
 	<comps>
 	  <li>
 		<compClass>CompQuality</compClass>
@@ -113,7 +114,7 @@
 	</statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BMT_FossilAmberSculptureBase" Name="BMT_FossilAmberSculptureLargeBase" Abstract="True">
+  <ThingDef ParentName="BMT_FossilSculptureBase" Name="BMT_AmberSculptureLargeBase" Abstract="True">
 	<!-- <defName>SculptureLarge</defName> -->
 	<label>large amber</label>
 	<description>A person-sized piece of material sculpted into an artistic form.</description>
@@ -127,6 +128,7 @@
 		<offset>(0, 0, -0.15)</offset>
 	  </shadowData>
 	</graphicData>
+	<uiIconScale>0.75</uiIconScale>
 	<size>(2,2)</size>
 	<comps>
 	  <li>
@@ -208,7 +210,7 @@
   <!--================================ Sculptures ======================================-->
   <!-- Templates for future sculptures -->
 
-  <ThingDef ParentName="BMT_FossilAmberSculptureMedBase" Name="BMT_AmberSculptureSmallBase" Abstract="True">
+  <ThingDef ParentName="BMT_AmberSculptureMedBase" Name="BMT_AmberSculptureSmallBase" Abstract="True">
 	<!-- <defName>BMT_AmberSculptureSmall</defName> -->
 	<label>small amber</label>
 	<graphicData>
@@ -277,7 +279,7 @@
 	<!-- <designationCategory>Production</designationCategory> -->
   </ThingDef>
 
-  <ThingDef ParentName="BMT_FossilAmberSculptureLargeBase">
+  <ThingDef ParentName="BMT_AmberSculptureLargeBase">
 	<defName>BMT_AmberSculptureLarge</defName>
 	<label>large amber</label>
 	<description>A large piece of amber sculpted into an artistic form.</description>

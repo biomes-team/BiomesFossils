@@ -35,16 +35,34 @@ namespace BMT_Fossils
 
         public IntVec3 GetViewCell(Pawn pawn)
         {
-            CellRect viewRect = GenAdj.OccupiedRect(parent.Position, parent.Rotation, new IntVec2((int)(parent.def.size.x + 2 * Props.maxViewDistance), (int)(parent.def.size.z + 2 * Props.maxViewDistance)));
-            
-            //if (Props.viewFromFront)
-            //{
-            //    IntVec3 center = parent.Position;
-            //    GenAdj.AdjustForRotation(center, new IntVec2(parent.def.size.x, (int)Props.maxViewDistance), parent.Rotation);
-                
-            //}
-            
-            
+            //CellRect viewRect = GenAdj.OccupiedRect(parent.Position, parent.Rotation, new IntVec2((int)(parent.def.size.x + 2 * Props.maxViewDistance), (int)(parent.def.size.z + 2 * Props.maxViewDistance)));
+            CellRect viewRect = GenAdj.OccupiedRect(parent).ExpandedBy((int)Props.maxViewDistance);
+
+
+            viewRect = viewRect.ClipInsideMap(parent.Map);
+            if (Props.viewFromFront)
+            {
+                Rot4 rot = parent.Rotation;
+                CellRect parentRect = GenAdj.OccupiedRect(parent);
+
+                if (rot == Rot4.North)
+                {
+                    viewRect.minZ = parentRect.maxZ + 1;
+                }
+                else if (rot == Rot4.South)
+                {
+                    viewRect.maxZ = parentRect.minZ - 1;
+                }
+                else if (rot == Rot4.East)
+                {
+                    viewRect.minX = parentRect.maxX + 1;
+                }
+                else if (rot == Rot4.West)
+                {
+                    viewRect.maxX = parentRect.minX - 1;
+                }
+            }
+
             List<IntVec3> cells = viewRect.Cells.Where(c => c.GetRoom(parent.Map) == parent.GetRoom()).ToList();
             cells = cells.Where(x => !PawnUtility.KnownDangerAt(x, pawn.Map, pawn) && !x.GetTerrain(pawn.Map).avoidWander && x.Standable(pawn.Map)).ToList();
 
