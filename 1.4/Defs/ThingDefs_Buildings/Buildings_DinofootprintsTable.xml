@@ -176,6 +176,7 @@
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3.6,3.6)</drawSize>
 	  <drawRotated>false</drawRotated>
+	  <drawOffset>(0,0,0.1)</drawOffset>
 	</graphicData>
 	<uiIconScale>0.8</uiIconScale>
 	<statBases>
@@ -196,6 +197,7 @@
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3.6,3.6)</drawSize>
 	  <drawRotated>false</drawRotated>
+	  <drawOffset>(0,0,0.1)</drawOffset>
 	</graphicData>
 	<uiIconScale>0.8</uiIconScale>
 	<statBases>

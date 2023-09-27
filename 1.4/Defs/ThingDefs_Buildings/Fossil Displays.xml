@@ -145,7 +145,7 @@
 	<ThingDef ParentName="BuildingBase" Name="BMT_DisplaySkeletonBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<thingClass>Building_Art</thingClass>
-	<altitudeLayer>Building</altitudeLayer>
+	<altitudeLayer>Item</altitudeLayer>
 	<passability>PassThroughOnly</passability>
 	<pathCost>50</pathCost>
 	<useHitPoints>true</useHitPoints>
