@@ -2,11 +2,33 @@
 <Defs>
 	<!-- =================================== FOSSIL BASES ==========================================-->
 	<!-- Templates for future sculptures -->
-	<ThingDef ParentName="BMT_AmberSculptureMedBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="BMT_FossilSculptureMedBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>medium fossil</label>
 		
 		<designationCategory>BMT_Paleontology</designationCategory>
+		<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Artistic</workSkill>
+	  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	  <effectWorking>Sculpt</effectWorking>
+	  <soundWorking>Recipe_Sculpt</soundWorking>
+	  <recipeUsers>
+		<li>BMT_TablePaleontology</li>
+	  </recipeUsers>
+	  <defaultIngredientFilter>
+		<categories>
+		  <li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+		  <li>Gold</li>
+		  <li>Silver</li>
+		  <li>Plasteel</li>
+		  <li>Jade</li>
+		  <li>Uranium</li>
+		</disallowedThingDefs>
+	  </defaultIngredientFilter>
+	</recipeMaker>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
@@ -120,8 +142,14 @@
   
 	
 	<!--================================ DINOSAUR SKELETONS ======================================-->
-	<ThingDef ParentName="BMT_FossilSculptureBase" Name="BMT_DisplaySkeletonBase" Abstract="True">
+	<ThingDef ParentName="BuildingBase" Name="BMT_DisplaySkeletonBase" Abstract="True">
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
+		<thingClass>Building_Art</thingClass>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<useHitPoints>true</useHitPoints>
+	<minifiedDef>MinifiedThing</minifiedDef>
 		<label>dino fossils</label>
 		<description>Fossils glued together using secret blueprints.</description>
 		<!-- TEMP -->
@@ -133,6 +161,16 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<castEdgeShadows>false</castEdgeShadows>
 		<rotatable>true</rotatable>
+		<thingCategories>
+	  <li>BMT_FossilCategory</li>
+	</thingCategories>
+	<designationCategory>BMT_Paleontology</designationCategory>
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<statBases>
+	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <MeditationFocusStrength>0.0</MeditationFocusStrength>
+	</statBases>
 		<costList>
 			<BMT_FossilResource>120</BMT_FossilResource>
 		</costList>
@@ -141,6 +179,19 @@
 				<museumPoints>2</museumPoints>
 				<isDisplay>true</isDisplay>
 			</li>
+			  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	  <li Class="CompProperties_Art">
+		<nameMaker>NamerArtSculpture</nameMaker>
+		<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	  </li>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>1</museumPoints>
+			<isDisplay>true</isDisplay>
+			<maxViewDistance>2</maxViewDistance>
+		</li>
 			<li Class="CompProperties_MeditationFocus">
 				<statDef>MeditationFocusStrength</statDef>
 				<focusTypes>
@@ -199,6 +250,24 @@
 				</offsets>
 			</li>
 		</comps>
+	<inspectorTabs>
+	  <li>ITab_Art</li>
+	</inspectorTabs>
+	<tradeTags>
+	  <li>Art</li>
+	  <li>BMT_FossilTrade</li>
+	</tradeTags>
+	<ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+	<ritualFocus>
+	  <spectateDistance>2</spectateDistance>
+	  <allowedSpectateSides>Down</allowedSpectateSides>
+	</ritualFocus>
+	<building>
+	  <paintable>true</paintable>
+	</building>
+		<researchPrerequisites>
+			<li>BMT_Paleontology</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="BMT_DisplaySkeletonBase" Name="BMT_DisplaySkeleSmallBase" Abstract="True">
@@ -220,6 +289,7 @@
 		</statBases>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseSmall</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
 			<BMT_FossilResource>40</BMT_FossilResource>
@@ -246,6 +316,7 @@
 		 <designatorDropdown>BMT_SkeleMed</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseMedium</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
 			<BMT_FossilResource>78</BMT_FossilResource>
@@ -271,6 +342,7 @@
 		 <designatorDropdown>BMT_SkeleLarge</designatorDropdown>
 		<placeWorkers>
 			<li>BMT_Fossils.PlaceWorker_OnDisplayBaseLarge</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
 			<BMT_FossilResource>122</BMT_FossilResource>
@@ -290,6 +362,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallRaptor</defName>
 		<label>raptor skeleton</label>
+		<description>Fossils glued together using secret blueprints.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Raptor/Dessicated_Raptor</texPath>
 		</graphicData>

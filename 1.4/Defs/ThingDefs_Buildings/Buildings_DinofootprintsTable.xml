@@ -37,6 +37,9 @@
 	  <Beauty>0.5</Beauty>
 	  <!-- <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance> -->
 	</statBases>
+	<researchPrerequisites>
+		<li>BMT_Paleontology</li>
+	</researchPrerequisites>
 	<comps>
 	  <li>
 		<compClass>CompQuality</compClass>
@@ -127,6 +130,7 @@
 		  <li>Uranium</li>
 		</disallowedThingDefs>
 	  </defaultIngredientFilter>
+	  <researchPrerequisite>BMT_Paleontology</researchPrerequisite>
 	</recipeMaker>
 	<costStuffCount>50</costStuffCount>
 	<stuffCategories>

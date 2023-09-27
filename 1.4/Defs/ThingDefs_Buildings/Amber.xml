@@ -75,6 +75,9 @@
 	<building>
 	  <paintable>true</paintable>
 	</building>
+		<researchPrerequisites>
+			<li>BMT_Paleontology</li>
+		</researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BMT_FossilSculptureBase" Name="BMT_AmberSculptureMedBase" Abstract="True">
