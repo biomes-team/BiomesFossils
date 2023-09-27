@@ -11,19 +11,19 @@
 	</graphicData>
 	<designationCategory>BMT_Paleontology</designationCategory>
 	<!-- = -->
-	<altitudeLayer>FloorCoverings</altitudeLayer>
+	<!-- <altitudeLayer>FloorCoverings</altitudeLayer> -->
 	<blockPlants>true</blockPlants>
 	<minifiedDef>MinifiedThing</minifiedDef>
 	<selectable>true</selectable>
 	<useHitPoints>true</useHitPoints>
-	<blocksAltitudes>
-	  <li>FloorCoverings</li>
-	</blocksAltitudes>
+	<!-- <blocksAltitudes> -->
+	  <!-- <li>FloorCoverings</li> -->
+	<!-- </blocksAltitudes> -->
 	<tradeTags>
 	  <li>BMT_FossilTrade</li>
 	</tradeTags>
 	
-	<!-- <altitudeLayer>Building</altitudeLayer> -->
+	<altitudeLayer>Building</altitudeLayer>
 	<passability>PassThroughOnly</passability>
 	<fillPercent>0.2</fillPercent>
 	<castEdgeShadows>false</castEdgeShadows>
