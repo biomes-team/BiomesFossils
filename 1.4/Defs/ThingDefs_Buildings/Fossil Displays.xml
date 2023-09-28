@@ -33,7 +33,9 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_Fossils/FossilsMedium</texPath>
 			<color>(135,116,99)</color>
+			<drawRotated>false</drawRotated>
 		</graphicData>
+		<rotatable>true</rotatable>
 		<size>(2,1)</size>
 		<costList>
 			<BMT_FossilResource>50</BMT_FossilResource>

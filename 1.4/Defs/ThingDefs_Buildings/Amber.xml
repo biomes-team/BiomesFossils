@@ -12,6 +12,10 @@
 	<thingCategories>
 	  <li>BMT_FossilCategory</li>
 	</thingCategories>
+	<rotatable>true</rotatable>
+	<graphicData>
+      <drawRotated>false</drawRotated>
+    </graphicData>
 	<designationCategory>BMT_Paleontology</designationCategory>
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 	<statBases>
@@ -76,6 +80,7 @@
 	  <paintable>true</paintable>
 	</building>
 		<researchPrerequisites>
+
 			<li>BMT_Paleontology</li>
 		</researchPrerequisites>
   </ThingDef>
@@ -107,7 +112,6 @@
 	  <!-- <li Class="CompProperties_Styleable"></li> -->
 	</comps>
 	<fillPercent>0.35</fillPercent>
-	<rotatable>false</rotatable>
 	<statBases>
 	  <MaxHitPoints>90</MaxHitPoints>
 	  <Mass>3</Mass>

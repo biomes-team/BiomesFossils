@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_AmberResource</defName>
 		<label>amber</label>
-		<description>ToDo</description>
+		<description>Fossilized tree sap.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/Resources/Amber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -62,7 +62,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BMT_FossilResource</defName>
 		<label>fossils</label>
-		<description>ToDo</description>
+		<description>Fossilized remains of ancient creatures.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/Resources/Fossil</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
