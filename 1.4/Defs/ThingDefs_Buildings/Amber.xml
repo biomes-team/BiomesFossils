@@ -16,7 +16,7 @@
 	<graphicData>
       <drawRotated>false</drawRotated>
     </graphicData>
-	<designationCategory>BMT_Paleontology</designationCategory>
+	<!-- <designationCategory>BMT_Paleontology</designationCategory> -->
 	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
 	<statBases>
 	  <Flammability>1.0</Flammability>

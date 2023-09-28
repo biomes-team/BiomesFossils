@@ -149,7 +149,7 @@
 
   <ThingDef ParentName="BMT_DinofootprintsBase">
 	<defName>BMT_DinoFootprintsTableSlab</defName>
-	<label>dinoFootprints table slab</label>
+	<label>dino footprints table slab</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/Footprints/DinofootprintsTable/DinoFootprintsTableSlab</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
@@ -169,7 +169,7 @@
 
   <ThingDef ParentName="BMT_DinofootprintsBase">
 	<defName>BMT_KaijuFootprintTableSlab</defName>
-	<label>kaijuFootprint table slab</label>
+	<label>kaiju footprint table slab</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/Footprints/KaijufootprintTable/KaijuFootprintTableSlab</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>

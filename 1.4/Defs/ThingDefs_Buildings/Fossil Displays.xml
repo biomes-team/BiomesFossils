@@ -6,11 +6,14 @@
 		<!-- <defName>BMT_FossilSculptureSmall</defName> -->
 		<label>medium fossil</label>
 
-		<designationCategory>BMT_Paleontology</designationCategory>
+		<!-- <designationCategory>BMT_Paleontology</designationCategory> -->
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
 			<li>BMT_FossilCategory</li>
 		</thingCategories>
+		<researchPrerequisites>
+			<li>BMT_Paleontology</li>
+		</researchPrerequisites>
 		<statBases>
 		  <MaxHitPoints>90</MaxHitPoints>
 		  <Mass>6</Mass>
@@ -47,11 +50,14 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<rotatable>true</rotatable>
-		<size>(2,1)</size>
+		<size>(1,2)</size>
 		<costList>
 			<BMT_FossilResource>50</BMT_FossilResource>
 		</costList>
 		<comps>
+			  <li>
+				<compClass>CompQuality</compClass>
+			  </li>
 			<li Class="BMT_Fossils.CompProperties_Display">
 				<museumPoints>0.6</museumPoints>
 				<isDisplay>true</isDisplay>
@@ -289,9 +295,9 @@
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<!-- <drawSize>(1.7,1.7)</drawSize> -->
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(3.3,3.3)</drawSize>
 		</graphicData>
-		<uiIconScale>0.70</uiIconScale>
+		<!-- <uiIconScale>0.70</uiIconScale> -->
 		<designationCategory>BMT_Paleontology</designationCategory>
 		<designatorDropdown>BMT_SkeleSmall</designatorDropdown>
 		<statBases>
@@ -308,7 +314,7 @@
 		<costList>
 			<BMT_FossilResource>40</BMT_FossilResource>
 		</costList>
-		<size>(1,1)</size>
+		<size>(1,2)</size>
 		<comps>
 			<li Class="BMT_Fossils.CompProperties_Display">
 				<museumPoints>2</museumPoints>
@@ -372,21 +378,15 @@
 	</ThingDef>
 
 
-	<!-- ===================== SMALL ========================== -->
-	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
-		<defName>BMT_SkeleSmallRaptor</defName>
-		<label>raptor skeleton</label>
-		<description>Fossils glued together using secret blueprints.</description>
-		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Raptor/Dessicated_Raptor</texPath>
-		</graphicData>
-	</ThingDef>
+<!-- Keep these in alphabetical order. The order here will be the order in game. -->
 
+	<!-- ===================== SMALL ========================== -->
+	
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
-		<defName>BMT_SkeleSmallPteranodon</defName>
-		<label>pteranodon skeleton</label>
+		<defName>BMT_SkeleSmallGallimimus</defName>
+		<label>gallimimus skeleton</label>
 		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Pteranodon/Dessicated_Pteranodon</texPath>
+			<texPath>BMT_Fossils/FossilsLarge/Gallimimus/Dessicated_Gallimimus</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -399,10 +399,19 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
-		<defName>BMT_SkeleSmallGallimimus</defName>
-		<label>gallimimus skeleton</label>
+		<defName>BMT_SkeleSmallPteranodon</defName>
+		<label>pteranodon skeleton</label>
 		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Gallimimus/Dessicated_Gallimimus</texPath>
+			<texPath>BMT_Fossils/FossilsLarge/Pteranodon/Dessicated_Pteranodon</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
+		<defName>BMT_SkeleSmallRaptor</defName>
+		<label>raptor skeleton</label>
+		<description>Fossils glued together using secret blueprints.</description>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Raptor/Dessicated_Raptor</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -413,6 +422,14 @@
 		<label>allosaurus skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
+		<defName>BMT_SkeleMedAnkylosaurus</defName>
+		<label>Ankylosaurus skeleton</label>
+		<graphicData>
+			<texPath>BMT_Fossils/FossilsLarge/Ankylosaurus/Dessicated_Ankylosaurus</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -446,7 +463,7 @@
 
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedStegosaurus</defName>
-		<label>Stegosaurus skeleton</label>
+		<label>stegosaurus skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Stegosaurus/Dessicated_Stegosaurus</texPath>
 		</graphicData>
@@ -454,17 +471,9 @@
 
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedTriceratops</defName>
-		<label>Triceratops skeleton</label>
+		<label>triceratops skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Triceratops/Dessicated_Triceratops</texPath>
-		</graphicData>
-	</ThingDef>
-
-	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
-		<defName>BMT_SkeleMedAnkylosaurus</defName>
-		<label>Ankylosaurus skeleton</label>
-		<graphicData>
-			<texPath>BMT_Fossils/FossilsLarge/Ankylosaurus/Dessicated_Ankylosaurus</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -487,7 +496,7 @@
 
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeSpino</defName>
-		<label>Spino skeleton</label>
+		<label>spino skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Spino/Dessicated_Spino</texPath>
 			<drawSize>(12,12)</drawSize>
@@ -496,7 +505,7 @@
 
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeTrex</defName>
-		<label>Trex skeleton</label>
+		<label>t-rex skeleton</label>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/TRex/Dessicated_TyrannosaurusRex</texPath>
 			<drawSize>(13,13)</drawSize>

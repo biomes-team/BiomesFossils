@@ -71,7 +71,7 @@
 	<label>small display</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
-	  <drawSize>(1.5,1.5)</drawSize>
+	  <drawSize>(1.5,2.2)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<costStuffCount>25</costStuffCount>
@@ -80,7 +80,7 @@
 	  <Mass>4</Mass>
 	  <WorkToBuild>500</WorkToBuild>
 	</statBases>
-	<size>(1,1)</size>
+	<size>(1,2)</size>
   </ThingDef>
 
   <ThingDef ParentName="BMT_FossilDisplayBase">

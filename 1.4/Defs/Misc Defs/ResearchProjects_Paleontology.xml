@@ -14,8 +14,8 @@
 	<tags>
 	  <li>TribalStart</li>
 	</tags>
-	<researchViewX>0.20</researchViewX>
-	<researchViewY>4.45</researchViewY>
+	<researchViewX>1.0</researchViewX>
+	<researchViewY>4.9</researchViewY>
 	<prerequisites>
 	  <li>Stonecutting</li>
 	</prerequisites>
