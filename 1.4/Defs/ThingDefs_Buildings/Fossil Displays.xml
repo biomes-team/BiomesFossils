@@ -266,6 +266,7 @@
 	</ritualFocus>
 	<building>
 	  <paintable>true</paintable>
+	  <isEdifice>false</isEdifice>
 	</building>
 		<researchPrerequisites>
 			<li>BMT_Paleontology</li>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-    <defName>MT_VelvetRope</defName>
+    <defName>BMT_VelvetRope</defName>
     <label>velvet rope</label>
     <description>A lightweight velvet rope, to discourage visitors from getting too close to the displays. Not very sturdy.</description>
     <thingClass>Building</thingClass>
@@ -81,7 +81,7 @@
    <ThingDef ParentName="LampBase" >
     <defName>BMT_DisplayLight</defName>
     <label>display light</label>
-    <description>A small light for hilighting museum displays. Not suitable for lighting a room.</description>
+    <description>A small light for hilighting museum displays. Not suitable for lighting a room, but very cheap to power.</description>
 	<graphicData>
       <texPath>BMT_Fossils/DisplayLight/DisplayLight</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -104,7 +104,7 @@
       </li>
 	 <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>5</basePowerConsumption>
+        <basePowerConsumption>4</basePowerConsumption>
         <powerUpgrades>
           <li>
             <researchProject>ColoredLights</researchProject>

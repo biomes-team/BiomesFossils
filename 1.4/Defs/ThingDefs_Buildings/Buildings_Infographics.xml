@@ -44,7 +44,6 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>3</Beauty>
 		</statBases>
-	<rotatable>false</rotatable>
 		<pathCost>30</pathCost>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
