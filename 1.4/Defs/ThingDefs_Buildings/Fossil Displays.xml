@@ -312,7 +312,7 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
-			<BMT_FossilResource>40</BMT_FossilResource>
+			<BMT_FossilResource>100</BMT_FossilResource>
 		</costList>
 		<size>(1,2)</size>
 		<comps>
@@ -339,7 +339,7 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
-			<BMT_FossilResource>78</BMT_FossilResource>
+			<BMT_FossilResource>300</BMT_FossilResource>
 		</costList>
 		<size>(2,3)</size>
 		<statBases>
@@ -365,7 +365,7 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<costList>
-			<BMT_FossilResource>122</BMT_FossilResource>
+			<BMT_FossilResource>800</BMT_FossilResource>
 		</costList>
 		<size>(3,4)</size>
 		<statBases>
