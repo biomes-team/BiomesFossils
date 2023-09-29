@@ -50,7 +50,7 @@
 			<drawRotated>false</drawRotated>
 		</graphicData>
 		<rotatable>true</rotatable>
-		<size>(1,2)</size>
+		<size>(2,1)</size>
 		<costList>
 			<BMT_FossilResource>50</BMT_FossilResource>
 		</costList>
