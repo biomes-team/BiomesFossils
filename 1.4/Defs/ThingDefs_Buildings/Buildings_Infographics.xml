@@ -319,8 +319,8 @@
 
 <ThingDef ParentName="BMT_FossilInfoLargeBase">
 	<defName>BMT_FossilInfo3Ankleo</defName>
-		<label>ankleosaur sign</label>
-	<description>A sign showing the ankleosaur and related dinosaurs.</description>
+		<label>ankylosaur sign</label>
+	<description>A sign showing the ankylosaur and related dinosaurs.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/3Ankleo/FossilInfoAnkleo</texPath>
 	</graphicData>
