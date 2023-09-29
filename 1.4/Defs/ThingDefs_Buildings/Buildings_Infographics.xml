@@ -253,7 +253,7 @@
 
 <ThingDef ParentName="BMT_FossilInfoMedBase">
 	<defName>BMT_FossilInfo2Iguanodon</defName>
-		<label>Iguanodonsaurus sign</label>
+		<label>iguanodon sign</label>
 	<description>A sign about ancient iguanodons.</description>
 	<graphicData>
 		<texPath>BMT_Fossils/Info/2Iguanodon/FossilInfoIguanodon</texPath>
