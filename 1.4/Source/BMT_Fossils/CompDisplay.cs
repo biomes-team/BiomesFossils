@@ -65,7 +65,7 @@ namespace BMT_Fossils
 
             List<IntVec3> cells = viewRect.Cells.Where(c => c.GetRoom(parent.Map) == parent.GetRoom()).ToList();
             cells = cells.Where(x => !PawnUtility.KnownDangerAt(x, pawn.Map, pawn) && !x.GetTerrain(pawn.Map).avoidWander && x.Standable(pawn.Map)).ToList();
-
+            cells = cells.Where(x => GenSight.LineOfSight(x, parent.Position, parent.Map)).ToList();
             IntVec3 viewCell = new IntVec3(0,0,0);
             if(cells.Count >= 1)
             {

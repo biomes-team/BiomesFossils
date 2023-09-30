@@ -60,16 +60,22 @@ namespace BMT_Fossils
 
 				// Should return a randomized list of viewable exhibits
 				List<Thing> exhibits = room.ContainedAndAdjacentThings.Where(t => t.TryGetComp<CompDisplay>() != null).ToList();
-				exhibits = exhibits.Where(t => t.TryGetComp<CompDisplay>().Props.canBeMuseumViewed == true).OrderBy(t => Rand.Value).ToList();
+				//exhibits = exhibits.Where(t => t.TryGetComp<CompDisplay>().Props.canBeMuseumViewed == true).OrderBy(t => Rand.Value).ToList();
 
 				job.targetQueueA = new List<LocalTargetInfo>();
+				Thing ex = result;
+				Thing newEx = result;
+				exhibits.Remove(ex);
 				for (int i = 1; i < exhibits.Count; i++)
 				{
-					IntVec3 viewCell = exhibits[i].TryGetComp<CompDisplay>().GetViewCell(pawn);
-					if(viewCell != new IntVec3(0,0,0))
-                    {
-						job.targetQueueA.Add(exhibits[i]);
+					newEx = exhibits.RandomElementByWeight(e => (float)Math.Max(.1, 15 - Math.Sqrt(Math.Pow(e.Position.x - ex.Position.x, 2) + Math.Pow(e.Position.z - ex.Position.z, 2))));
+					IntVec3 viewCell = newEx.TryGetComp<CompDisplay>().GetViewCell(pawn);
+					if (viewCell != new IntVec3(0, 0, 0))
+					{
+						job.targetQueueA.Add(newEx);
 					}
+					exhibits.Remove(newEx);
+					ex = newEx;
 				}
 				//job.locomotionUrgency = LocomotionUrgency.Walk;
 
