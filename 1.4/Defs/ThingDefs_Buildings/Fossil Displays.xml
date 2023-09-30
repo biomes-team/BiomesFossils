@@ -345,7 +345,7 @@
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Mass>5</Mass>
-			<Beauty>80</Beauty>
+			<Beauty>100</Beauty>
 			<WorkToMake>24000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
@@ -371,7 +371,7 @@
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>7</Mass>
-			<Beauty>100</Beauty>
+			<Beauty>200</Beauty>
 			<WorkToMake>30000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
 		</statBases>
