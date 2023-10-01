@@ -29,7 +29,13 @@ namespace BMT_Fossils
 
 			yield return goToil;
 
-            Toil wait = Toils_General.Wait(1000);
+			Toil wait = ToilMaker.MakeToil("Wait");
+			wait.initAction = delegate
+			{
+				wait.actor.pather.StopDead();
+				wait.defaultCompleteMode = ToilCompleteMode.Delay;
+				wait.defaultDuration = (int)Math.Max(500, 1000 * job.targetA.Thing.TryGetComp<CompDisplay>().displayValue);
+			};
             wait.tickAction = delegate
             {
                 WaitTickAction();

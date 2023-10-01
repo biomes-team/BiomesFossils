@@ -60,6 +60,7 @@ namespace BMT_Fossils
 
 				// Should return a randomized list of viewable exhibits
 				List<Thing> exhibits = room.ContainedAndAdjacentThings.Where(t => t.TryGetComp<CompDisplay>() != null).ToList();
+				exhibits = exhibits.Where(e => e.TryGetComp<CompDisplay>().Props.canBeMuseumViewed).ToList();
 				//exhibits = exhibits.Where(t => t.TryGetComp<CompDisplay>().Props.canBeMuseumViewed == true).OrderBy(t => Rand.Value).ToList();
 
 				job.targetQueueA = new List<LocalTargetInfo>();
