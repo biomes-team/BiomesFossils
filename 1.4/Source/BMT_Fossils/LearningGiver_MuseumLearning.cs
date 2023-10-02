@@ -43,10 +43,10 @@ namespace BMT_Fossils
 					{
 						return false;
 					}
-					if (compDisplay.GetViewCell(pawn) == new IntVec3(0,0,0))
-                    {
+					if (compDisplay.GetViewCell(pawn) == new IntVec3(0, 0, 0))
+					{
 						return false;
-                    }
+					}
 					return (room.Role == FossilsDefOf.BMT_Museum) ? true : false;
 				}));
 				if (!candidates.TryRandomElementByWeight((Thing target) => Mathf.Max(target.GetStatValue(StatDefOf.Beauty), 0.5f), out var result))
@@ -85,6 +85,22 @@ namespace BMT_Fossils
 			{
 				candidates.Clear();
 			}
+		}
+
+		public override bool CanGiveDesire
+		{
+			get
+			{
+				foreach (Map map in Find.Maps)
+				{
+					if (map.regionGrid.allRooms.Any(r => r.Role == FossilsDefOf.BMT_Museum))
+					{
+						return true;
+					}
+				}
+				return false;
+			}
+
 		}
 	}
 }

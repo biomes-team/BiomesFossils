@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace BMT_Fossils
 {
