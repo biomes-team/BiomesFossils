@@ -385,6 +385,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallGallimimus</defName>
 		<label>gallimimus skeleton</label>
+		<description>One of the largest of its kind, the Gallimimus had long tails and slender legs, allowing for fast running. It is usually found in small herds and can be used as a swift pack animal on caravans. \n\nScientific name: Gallimimus bullatus</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Gallimimus/Dessicated_Gallimimus</texPath>
 		</graphicData>
@@ -393,6 +394,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallOviraptor</defName>
 		<label>oviraptor skeleton</label>
+		<description>While it was originally thought to be an egg thief, hence its name, it was discovered later to not be one at all, instead being a caring parent who took care of its young in a nest. It uses its jaws to crush hard foods such as fruits and seeds.\n\nScientific name: Oviraptor philoceratops</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Oviraptor/Dessicated_Oviraptor</texPath>
 		</graphicData>
@@ -401,6 +403,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallPteranodon</defName>
 		<label>pteranodon skeleton</label>
+		<description>Pteranodon flies and hunts like modern albatross. Its streamlined skull and toothless jaws made diving into the water for fish an easy task.\n\nScientific name: Pteranodon longiceps</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Pteranodon/Dessicated_Pteranodon</texPath>
 		</graphicData>
@@ -409,7 +412,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleSmallBase">
 		<defName>BMT_SkeleSmallRaptor</defName>
 		<label>raptor skeleton</label>
-		<description>Fossils glued together using secret blueprints.</description>
+		<description>A small raptor with a downy hide. It is an expert hunter and can be used as a speedy attack animal. Its down can be shed once a year.\n\nScientific name: Velociraptor mongoliensis</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Raptor/Dessicated_Raptor</texPath>
 		</graphicData>
@@ -420,6 +423,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedAllosaurus</defName>
 		<label>allosaurus skeleton</label>
+		<description>The loosely jointed jaws of Allosaurus allow it to open its jaws extremely wide, similar to snakes. While they lack the bone crushing abilities of the Tyrannosaurs, their teeth are very effective at tearing away chunks of flesh as they attack. \n\nScientific name: Allosaurus fragilis (Fragile different lizard) \n\nThe first Allosaurus fossils found were vertebrae, which locals has assumed were petrified horse hooves.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Allosaurus/Dessicated_Allosaurus</texPath>
 		</graphicData>
@@ -427,7 +431,8 @@
 
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedAnkylosaurus</defName>
-		<label>Ankylosaurus skeleton</label>
+		<label>ankylosaurus skeleton</label>
+		<description>Ankylosaurus is perhaps the largest of its kind and has formidible defences, with a thick skull, bony plates covering its back and a collar of bone protecting its neck. If any predators do try to find a gap in its armour the dense club on its tail is more than capable of shattering the bones of large therapods - and the bodies of smaller ones. \n\nScientific name: Ankylosaurus magniventris (Fused lizard with a wide belly) \n\nThere have been relatively few fossils found of Ankylosaurus compared to other related dinosaurs, it owes its fame largely to a scale model of it being displayed at the 1964 World's Fair.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Ankylosaurus/Dessicated_Ankylosaurus</texPath>
 		</graphicData>
@@ -436,6 +441,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedElasmosaurus</defName>
 		<label>elasmosaurus skeleton</label>
+		<description>Elasmosaurus used its long neck to get close to prey without them noticing. A swift flick of the neck could catch them unawares. Its long, narrow teeth were perfect for piercing and trapping small, soft prey. Scientific name: Elasmosaurus platyurus</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Elasmosaurus/Dessicated_Elasmosaurus</texPath>
 			<drawSize>(5.5,5.5)</drawSize>
@@ -445,6 +451,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedIguanodon</defName>
 		<label>iguanodon skeleton</label>
+		<description>A plant-eating dinosaur that mostly walked on all fours but could stand on two legs if need be, primarily for feeding purposes. Its large thumb spikes are used in defense.\n\nScienfitic name: Iguanodon bernissartensis</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Iguanodon/Dessicated_Iguanodon</texPath>
 			<drawSize>(5.2,5.2)</drawSize>
@@ -455,6 +462,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedParasaur</defName>
 		<label>parasaur skeleton</label>
+		<description>A docile herbivore that lives in large groups. They are best known for the tubular crest on the back of its skull. This crest was used in the production of long, resonating calls for various purposes, from warning others nearby of threats, to communicating between mates.\n\nScientific name: Parasaurolophus walkeri</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Parasaur/Dessicated_Parasaur</texPath>
 			<drawSize>(4.8,4.8)</drawSize>
@@ -464,6 +472,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedStegosaurus</defName>
 		<label>stegosaurus skeleton</label>
+		<description>One of the more well known dinosaurs, it is a grazing animal with distinctive staggered plates along its back and a dangerous spiked tail. This dinosaur has one of the smallest brains relative to its body size. They are also often found in family groups.\n\nScientific name: Stegosaurus stenops</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Stegosaurus/Dessicated_Stegosaurus</texPath>
 		</graphicData>
@@ -472,6 +481,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleMedBase">
 		<defName>BMT_SkeleMedTriceratops</defName>
 		<label>triceratops skeleton</label>
+		<description>One of the most well-known dinosaurs to even the least educated on the Rim, Triceratops had a large neck frill, two large brow horns, and a smaller nasal horn. They sometimes fought among themselves, whether it be for mates or territory and some remains even showed signs of having fought Tyrannosaurs.\n\nScientific name: Triceratops horridus</description> 
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Triceratops/Dessicated_Triceratops</texPath>
 		</graphicData>
@@ -481,6 +491,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeBrachiosaurus</defName>
 		<label>brachiosaurus skeleton</label>
+		<description>A huge herbivorous dinosaur. Their long necks are better suited to being held upright than those of other sauropods, in large part due to their body posture, making them efficient defoliators of trees. \n\nScientific name: Brachiosaurus altithorax (Arm lizard with a deep chest) \n\nAs with many dinosaurs excavated during the bone wars, the site where Brachiosaurus was discovered had to be guarded to prevent sabotage and looting.</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Brachiosaurus/Dessicated_Brachiosaurus</texPath>
 		</graphicData>
@@ -489,6 +500,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeMosasaurus</defName>
 		<label>mosasaurus skeleton</label>
+		<description>Mosasaurus swam using its long crocodile-like body in an undulating motion to swim and devoured all kinds of prey with its massive jaws and sharp, cone-shaped teeth. It lives and hunts the well-lit surface waters of the oceans.\n\nScientific name: Mosasaurus hoffmannii</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Mosasaurus/Dessicated_Mosasaurus</texPath>
 		</graphicData>
@@ -497,6 +509,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeSpino</defName>
 		<label>spino skeleton</label>
+		<description>A sail-backed, semi-aquatic theropod with a paddle-like tail, larger in size than any other known theropod. It prowls wetlands and waterways searching for fish and other prey, much like modern crocodilians.\n\nScientific name: Spinosaurus aegyptiacus</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/Spino/Dessicated_Spino</texPath>
 			<drawSize>(12,12)</drawSize>
@@ -506,6 +519,7 @@
 	<ThingDef ParentName="BMT_DisplaySkeleLargeBase">
 		<defName>BMT_SkeleLargeTrex</defName>
 		<label>t-rex skeleton</label>
+		<description>Known as the “Tyrant Lizard”, it was a very large predatory dinosaur that was widespread throughout North America. It had an extremely powerful bite force. Worn tooth tips and bone fragments in their feces indicated that they commonly crushed and swallowed bones.\n\nScientific name: Tyrannosaurus Rex</description>
 		<graphicData>
 			<texPath>BMT_Fossils/FossilsLarge/TRex/Dessicated_TyrannosaurusRex</texPath>
 			<drawSize>(13,13)</drawSize>
