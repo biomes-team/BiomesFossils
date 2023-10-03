@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TraderKindDef>
+		<defName>BMT_Caravan_Paleontologist</defName>
+		<label>paleontologist</label>
+		<commonality>0.25</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>550~900</countRange>
+			</li>
+			<!-- Selling -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>BMT_AmberResource</thingDef>
+				<totalPriceRange>800~1100</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>BMT_FossilResource</thingDef>
+				<totalPriceRange>700~1000</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_MarketValue">
+				<tradeTag>BMT_FossilTrade</tradeTag>
+				<countRange>2~4</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Pemmican</thingDef>
+				<countRange>200~250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Bedroll</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+			<li MayRequire="BiomesTeam.BiomesCore,VanillaExpanded.VWE" Class="BiomesCore.StockGenerators.HighQualityItems">
+				<thingDefs>
+					<li>VWE_MeleeWeapon_Hammer</li>
+					<li>VWE_MeleeWeapon_Shovel</li>
+				</thingDefs>
+				<countRange>1~2</countRange>
+				<minQuality>Good</minQuality>
+				<maxQuality>Masterwork</maxQuality>
+			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Art</tag>
+			</li>
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>MusicalInstrument</tag>
+			</li>
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>
