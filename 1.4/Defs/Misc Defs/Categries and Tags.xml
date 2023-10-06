@@ -7,6 +7,12 @@
       <parent>Buildings</parent>
     </ThingCategoryDef>
 	
+	 <ThingCategoryDef>
+      <defName>BMT_DisplayItem</defName>
+      <label>display item</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+	
 	<DesignationCategoryDef>
 		<defName>BMT_Paleontology</defName>
 		<label>paleontology</label>

@@ -8,6 +8,9 @@
 	  <texPath>BMT_Fossils/FossilsSmall</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	</graphicData>
+	<thingCategories>
+	  <li>BMT_DisplayItem</li>
+	</thingCategories>
 	<statBases>
 	  <MarketValue>50</MarketValue>
 	  <MaxHitPoints>80</MaxHitPoints>
@@ -15,9 +18,6 @@
 	  <DeteriorationRate>1.0</DeteriorationRate>
 	  <Flammability>0.2</Flammability>
 	</statBases>
-	<thingCategories>
-	  <li>ItemsMisc</li>
-	</thingCategories>
 	<stackLimit>10</stackLimit>
 	<tradeability>Sellable</tradeability>
 	<tradeTags>

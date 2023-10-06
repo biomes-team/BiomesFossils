@@ -71,7 +71,7 @@
 	<label>small display</label>
 	<graphicData>
 	  <texPath>BMT_Fossils/DisplaySmall/SmallStand</texPath>
-	  <drawSize>(1.5,2.2)</drawSize>
+	  <drawSize>(3,3)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
 	<costStuffCount>25</costStuffCount>
