@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+	<defName>BMT_Apparel_MascotOutfit</defName>
+	<label>dino mascot</label>
+	<description>A dino-parka for staying warm in even the coldest of temperatures.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/Apparel/MascotOutfit/armortest</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.90</drawSize>
+	</graphicData>
+	<techLevel>Neolithic</techLevel>
+	<costStuffCount>80</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<generateCommonality>0.001</generateCommonality>
+	<thingCategories>
+	  <li>ApparelMisc</li>
+	</thingCategories>
+	<statBases>
+	  <MaxHitPoints>180</MaxHitPoints>
+	  <WorkToMake>8000</WorkToMake>
+	  <Mass>2</Mass>
+	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+	  <Insulation_Heat>-7</Insulation_Heat>
+	  <EquipDelay>3</EquipDelay>
+	</statBases>
+	<apparel>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+	  <bodyPartGroups>
+		<li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+	  </bodyPartGroups>
+	  <wornGraphicPath>BMT_Fossils/Apparel/MascotOutfit/armortest</wornGraphicPath>
+	  <layers>
+		<li>Shell</li>
+	  </layers>
+	  <tags>
+		<li>IndustrialBasic</li>
+		<li>Neolithic</li>
+	  </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+	  </defaultOutfitTags>
+	  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+	  <options>
+		<li>
+		  <weight>10</weight>
+		  <only>(255,255,255)</only>
+		</li>
+	  </options>
+	</colorGenerator>
+	<tradeTags>
+	  <li>BasicClothing</li>
+	</tradeTags>
+	<recipeMaker>
+	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	  <displayPriority>220</displayPriority>
+	  <useIngredientsForColor>false</useIngredientsForColor>
+	</recipeMaker>
+  </ThingDef>
+  
+</Defs>

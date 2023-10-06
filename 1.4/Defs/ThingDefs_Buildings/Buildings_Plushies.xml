@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase" Name="BMT_PlushiesSculptureBase" Abstract="True">
+	<description>Cute plush dinosaur.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/Plushies/CeratopsPlush/plushy</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(1.2,1.2)</drawSize>
+      <!-- <drawRotated>false</drawRotated> -->
+	</graphicData>
+	<!-- <designationCategory>Production</designationCategory> -->
+	<thingClass>Building_Art</thingClass>
+	<altitudeLayer>Building</altitudeLayer>
+	<passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<useHitPoints>true</useHitPoints>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<thingCategories>
+	  <li>BuildingsArt</li>
+	</thingCategories>
+	<rotatable>true</rotatable>
+	<!-- <designationCategory>BMT_Paleontology</designationCategory> -->
+	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+	<statBases>
+	  <Flammability>1.0</Flammability>
+	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <Mass>2</Mass>
+	</statBases>
+	<costStuffCount>50</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<comps>
+	  <li>
+		<compClass>CompQuality</compClass>
+	  </li>
+	</comps>
+	<inspectorTabs>
+	  <li>ITab_Art</li>
+	</inspectorTabs>
+	<tradeTags>
+	  <li>Art</li>
+	</tradeTags>
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+	  <workSkill>Crafting</workSkill>
+	  <effectWorking>Tailor</effectWorking>
+	  <soundWorking>Recipe_Tailor</soundWorking>
+	  <recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+	  </recipeUsers>
+	  <defaultIngredientFilter>
+		<categories>
+		  <li>Root</li>
+		</categories>
+		<disallowedThingDefs>
+		  <li>Gold</li>
+		  <li>Silver</li>
+		  <li>Plasteel</li>
+		  <li>Jade</li>
+		  <li>Uranium</li>
+		</disallowedThingDefs>
+	  </defaultIngredientFilter>
+	  <useIngredientsForColor>false</useIngredientsForColor>
+	</recipeMaker>
+	<size>(1,1)</size>
+	<building>
+	  <paintable>false</paintable>
+	</building>
+	<researchPrerequisites>
+	  <li>ComplexClothing</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_PlushiesSculptureBase">
+	<defName>BMT_CeratopsPlush</defName>
+	<label>ceratops plush</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Plushies/CeratopsPlush/plushy</texPath>
+	</graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BMT_PlushiesSculptureBase">
+	<defName>BMT_RexyPlush</defName>
+	<label>rexy plush</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Plushies/RexyPlush/plushy</texPath>
+	</graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BMT_PlushiesSculptureBase">
+	<defName>BMT_SauropodPlush</defName>
+	<label>sauropod plush</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Plushies/SauropodPlush/plushy</texPath>
+	</graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BMT_PlushiesSculptureBase">
+	<defName>BMT_StegoPlush</defName>
+	<label>stego plush</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Plushies/StegoPlush/plushy</texPath>
+	</graphicData>
+  </ThingDef>
+
+</Defs>
