@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef Name="BMT_DisplayCaseBase" ParentName="FurnitureWithQualityBase" Abstract="True">
+		<drawerType>RealtimeOnly</drawerType>
 		<thingClass>Building_Storage</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
