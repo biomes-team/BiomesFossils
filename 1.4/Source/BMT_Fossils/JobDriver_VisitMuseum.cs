@@ -72,7 +72,7 @@ namespace BMT_Fossils
 			pawn.GainComfortFromCellIfPossible();
 
 			//JoyUtility.JoyTickCheckEnd(pawn, JoyTickFullJoyAction.EndJob, extraJoyGainFactor, (Building)MuseumThing);
-			pawn.needs.joy?.GainJoy(extraJoyGainFactor *  0.36f / 2500f, JoyKindDefOf.Meditative);
+			pawn.needs.joy?.GainJoy(extraJoyGainFactor *  0.36f / 2500f, FossilsDefOf.BMT_MuseumJoy);
             Need_Joy joy = pawn.needs.joy;
             if (joy != null && joy.CurLevel > 0.9999f)
             {

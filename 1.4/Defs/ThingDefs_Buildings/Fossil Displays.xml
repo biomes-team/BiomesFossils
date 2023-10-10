@@ -21,6 +21,8 @@
 		  <WorkToMake>24000</WorkToMake>
 		  <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
+		<building>
+			<joyKind>BMT_MuseumJoy</joyKind></building>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Artistic</workSkill>
@@ -284,6 +286,7 @@
 		<building>
 			<paintable>true</paintable>
 			<isEdifice>false</isEdifice>
+			<joyKind>BMT_MuseumJoy</joyKind>
 		</building>
 		<researchPrerequisites>
 			<li>BMT_Paleontology</li>
