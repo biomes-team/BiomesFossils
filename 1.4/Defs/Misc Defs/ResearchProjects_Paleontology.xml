@@ -11,9 +11,6 @@
 	<description>Excavation of fossils and their subsequent processing for display in a museum.</description>
 	<baseCost>500</baseCost>
 	<techLevel>Medieval</techLevel>
-	<tags>
-	  <li>TribalStart</li>
-	</tags>
 	<researchViewX>1.0</researchViewX>
 	<researchViewY>4.9</researchViewY>
 	<prerequisites>

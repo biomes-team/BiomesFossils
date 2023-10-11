@@ -23,7 +23,7 @@
 	  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 	  <EquipDelay>0.8</EquipDelay>
 	</statBases>
-	<generateCommonality>0.05</generateCommonality>
+	<generateCommonality>0.005</generateCommonality>
 	<recipeMaker>
 	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
 	  <displayPriority>105</displayPriority>

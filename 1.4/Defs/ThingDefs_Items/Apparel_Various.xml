@@ -16,7 +16,7 @@
 	  <li>Fabric</li>
 	  <li>Leathery</li>
 	</stuffCategories>
-	<generateCommonality>0.001</generateCommonality>
+	<generateCommonality>0.0001</generateCommonality>
 	<thingCategories>
 	  <li>ApparelMisc</li>
 	</thingCategories>
