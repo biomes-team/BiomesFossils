@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase" Name="BMT_PlushiesSculptureBase" Abstract="True">
-	<description>Cute plush dinosaur.</description>
+	<description>A cute plush dinosaur.</description>
 	<graphicData>
 	  <texPath>BMT_Fossils/Plushies/CeratopsPlush/plushy</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
@@ -26,6 +26,7 @@
 	  <Flammability>1.0</Flammability>
 	  <SellPriceFactor>1.10</SellPriceFactor>
 	  <Mass>2</Mass>
+	  <Beauty>10</Beauty>
 	</statBases>
 	<costStuffCount>50</costStuffCount>
 	<stuffCategories>
