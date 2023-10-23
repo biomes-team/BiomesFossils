@@ -49,6 +49,7 @@
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
+			<joyKind>BMT_MuseumJoy</joyKind>
 		</building>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>

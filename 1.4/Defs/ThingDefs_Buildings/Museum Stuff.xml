@@ -13,7 +13,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Custom7</li>
+        <li>Custom6</li>
       </linkFlags>
       <shadowData>
         <volume>(0.3, 0.5, 0.3)</volume>
@@ -60,6 +60,9 @@
     <canOverlapZones>false</canOverlapZones>
     <fertility>0</fertility>
     <building>
+      <blueprintGraphicData>
+        <texPath>BMT_Fossils/VelvetRope/VelvetRope_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
       <isInert>true</isInert>
       <isFence>false</isFence>
       <isPlaceOverableWall>true</isPlaceOverableWall>

@@ -78,6 +78,7 @@
 	</ritualFocus>
 	<building>
 	  <paintable>true</paintable>
+		<joyKind>BMT_MuseumJoy</joyKind>
 	</building>
 		<researchPrerequisites>
 

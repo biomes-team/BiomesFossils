@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="BMT_DisplayCaseBase" ParentName="FurnitureWithQualityBase" Abstract="True">
+		<drawerType>RealtimeOnly</drawerType>
+		<thingClass>Building_Storage</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>50</pathCost>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<!-- <defaultPlacingRot>South</defaultPlacingRot> -->
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+			<maxItemsInCell>1</maxItemsInCell>
+			<storageGroupTag>Shelf</storageGroupTag>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>BMT_DisplayItem</li><!-- TODO -->
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>BMT_DisplayItem</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+			<li>BMT_Paleontology</li>
+		</researchPrerequisites>
+		<designationCategory>BMT_Paleontology</designationCategory>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BMT_DisplayCaseBase">
+		<defName>BMT_DisplayCase</defName>
+		<label>simple display case</label>
+		<description>A simple display case, for displaying an item behind glass.</description>
+		<graphicData>
+			<texPath>BMT_Fossils/DisplayCase/DisplayCase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<costStuffCount>10</costStuffCount>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>4</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<relatedBuildCommands>
+				<li>Shelf</li>
+			</relatedBuildCommands>
+			<fullGraveGraphicData>
+				<texPath>BMT_Fossils/DisplayCase/DisplayCase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+				<drawSize>2</drawSize>
+			</fullGraveGraphicData>
+		</building>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+			<li Class="BMT_Fossils.CompProperties_Display">
+				<museumPoints>0.25</museumPoints>
+				<isDisplay>false</isDisplay>
+				<isInfo>false</isInfo>
+				<canBeMuseumViewed>false</canBeMuseumViewed>
+			</li>
+			<li Class="BMT_Fossils.CompProperties_DisplayCase">
+				<topGraphicData>
+					<texPath>BMT_Fossils/DisplayCase/DisplayCase_Top</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>2</drawSize>
+					<shaderType>Transparent</shaderType>
+				</topGraphicData>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

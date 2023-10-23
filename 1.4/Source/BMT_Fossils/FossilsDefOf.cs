@@ -17,5 +17,7 @@ namespace BMT_Fossils
 
         public static RoomRoleDef BMT_Museum;
         public static ThoughtDef BMT_VisitedMuseum;
+
+        public static JoyKindDef BMT_MuseumJoy;
     }
 }

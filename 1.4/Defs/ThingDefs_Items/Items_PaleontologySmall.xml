@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase" Name="BMT_PaleontologyItemSmallAmberAndFossil_Base" Abstract="True">
+	<thingClass>ThingWithComps</thingClass>
+	<useHitPoints>true</useHitPoints>
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsSmall</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<thingCategories>
+	  <li>BMT_DisplayItem</li>
+	</thingCategories>
+	<statBases>
+	  <MarketValue>50</MarketValue>
+	  <MaxHitPoints>80</MaxHitPoints>
+	  <Mass>0.2</Mass>
+	  <DeteriorationRate>1.0</DeteriorationRate>
+	  <Flammability>0.2</Flammability>
+	</statBases>
+	<stackLimit>10</stackLimit>
+	<tradeability>Sellable</tradeability>
+	<tradeTags>
+	  <li>ExoticMisc</li>
+	</tradeTags>
+	<recipeMaker>
+	  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	  <workSkill>Artistic</workSkill>
+	  <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	  <effectWorking>Sculpt</effectWorking>
+	  <soundWorking>Recipe_Sculpt</soundWorking>
+	  <recipeUsers>
+		<li>BMT_TablePaleontology</li>
+	  </recipeUsers>
+	</recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_PaleontologyItemSmallAmberAndFossil_Base">
+	<defName>BMT_PaleontologyItemSmall_Amber</defName>
+	<label>small amber</label>
+	<description>A small piece of amber.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/AmberSmall</texPath>
+	</graphicData>
+	<costList>
+	  <BMT_AmberResource>20</BMT_AmberResource>
+	</costList>
+  </ThingDef>
+  <ThingDef ParentName="BMT_PaleontologyItemSmallAmberAndFossil_Base">
+	<defName>BMT_PaleontologyItemSmall_Fossil</defName>
+	<label>small fossil</label>
+	<description>A small piece of fossil.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/FossilsSmall</texPath>
+	</graphicData>
+	<costList>
+	  <BMT_FossilResource>20</BMT_FossilResource>
+	</costList>
+  </ThingDef>
+
+</Defs>

@@ -2,12 +2,18 @@
 <Defs>
 
   
+  <JoyKindDef>
+    <defName>BMT_MuseumJoy</defName>
+    <label>museum visiting</label>
+  </JoyKindDef>
+  
+  
   <JobDef>
     <defName>BMT_VisitMuseum</defName>
     <driverClass>BMT_Fossils.JobDriver_VisitMuseum</driverClass>
     <reportString>visiting museum.</reportString>
     <joyDuration>4000</joyDuration>
-    <joyKind>Meditative</joyKind>
+    <joyKind>BMT_MuseumJoy</joyKind>
   </JobDef>
     
 	
@@ -16,7 +22,7 @@
     <giverClass>BMT_Fossils.JoyGiver_VisitMuseum</giverClass>
     <baseChance>1</baseChance>
     <jobDef>BMT_VisitMuseum</jobDef>
-    <joyKind>Meditative</joyKind>
+    <joyKind>BMT_MuseumJoy</joyKind>
     <canDoWhileInBed>false</canDoWhileInBed>
     <requiredCapacities>
       <li>Sight</li>
