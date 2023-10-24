@@ -33,6 +33,13 @@
 		<li>BMT_TablePaleontology</li>
 	  </recipeUsers>
 	</recipeMaker>
+	<comps>
+		<li Class="BMT_Fossils.CompProperties_Display">
+			<museumPoints>0.4</museumPoints>
+			<isDisplay>true</isDisplay>
+			<maxViewDistance>1</maxViewDistance>
+		</li>
+	</comps>
   </ThingDef>
 
   <ThingDef ParentName="BMT_PaleontologyItemSmallAmberAndFossil_Base">

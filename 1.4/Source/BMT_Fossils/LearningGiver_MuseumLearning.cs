@@ -34,7 +34,7 @@ namespace BMT_Fossils
 					{
 						return false;
 					}
-					if (!compDisplay.Props.canBeMuseumViewed)
+					if (!compDisplay.isMuseumViewable)
 					{
 						return false;
 					}
@@ -60,7 +60,7 @@ namespace BMT_Fossils
 
 				// Should return a randomized list of viewable exhibits
 				List<Thing> exhibits = room.ContainedAndAdjacentThings.Where(t => t.TryGetComp<CompDisplay>() != null).ToList();
-				exhibits = exhibits.Where(e => e.TryGetComp<CompDisplay>().Props.canBeMuseumViewed).ToList();
+				exhibits = exhibits.Where(e => e.TryGetComp<CompDisplay>().isMuseumViewable).ToList();
 
 				job.targetQueueA = new List<LocalTargetInfo>();
 				Thing ex = result;

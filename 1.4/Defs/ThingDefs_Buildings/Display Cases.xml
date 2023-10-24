@@ -94,6 +94,7 @@
 				<isDisplay>false</isDisplay>
 				<isInfo>false</isInfo>
 				<canBeMuseumViewed>false</canBeMuseumViewed>
+				<maxViewDistance>1</maxViewDistance>
 			</li>
 			<li Class="BMT_Fossils.CompProperties_DisplayCase">
 				<topGraphicData>

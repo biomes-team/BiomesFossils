@@ -19,6 +19,20 @@ namespace BMT_Fossils
             {
                 float val = Props.museumPoints;
 
+                if (parent.TryGetComp<CompDisplayCase>() != null)
+                {
+                    Building_Storage displayCase = (Building_Storage)parent;
+                    if(displayCase.slotGroup.HeldThings.Any())
+                    {
+                        val = 0;
+                        foreach(Thing t in displayCase.slotGroup.HeldThings)
+                        {
+                            val += t.TryGetComp<CompDisplay>().Props.museumPoints;
+                        }
+                    }
+                }
+
+
                 //if (parent.GetComp<CompAffectedByFacilities>() != null)
                 //{
                 //    CompAffectedByFacilities linkComp = parent.GetComp<CompAffectedByFacilities>();
@@ -32,6 +46,30 @@ namespace BMT_Fossils
                 return val;
             }
         }
+
+        public bool isMuseumViewable
+        {
+            get
+            {
+                bool viewable = Props.isDisplay;
+
+                if(!viewable)
+                {
+                    if (parent.TryGetComp<CompDisplayCase>() != null)
+                    {
+                        Building_Storage displayCase = (Building_Storage)parent;
+                        if (displayCase.slotGroup.HeldThings.Any(t => t.TryGetComp<CompDisplay>().Props.canBeMuseumViewed))
+                        {
+
+                            viewable = true;
+                        }
+                    }
+                }
+                return viewable;
+            }
+        }
+
+
 
         public IntVec3 GetViewCell(Pawn pawn)
         {

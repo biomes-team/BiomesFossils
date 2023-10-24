@@ -35,7 +35,7 @@ namespace BMT_Fossils
                 //}
             }
 
-            return num * 5f;
+            return num * 10f;
 
         }
     }
