@@ -18,7 +18,7 @@
 	  <DeteriorationRate>1.0</DeteriorationRate>
 	  <Flammability>0.2</Flammability>
 	</statBases>
-	<stackLimit>10</stackLimit>
+	<stackLimit>1</stackLimit>
 	<tradeability>Sellable</tradeability>
 	<tradeTags>
 	  <li>ExoticMisc</li>
@@ -63,6 +63,7 @@
 	<costList>
 	  <BMT_FossilResource>20</BMT_FossilResource>
 	</costList>
+	<color>(255,194,0)</color>
   </ThingDef>
 
 </Defs>

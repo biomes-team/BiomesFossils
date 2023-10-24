@@ -65,7 +65,7 @@
 			<texPath>BMT_Fossils/DisplayCase/DisplayCase</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<costStuffCount>10</costStuffCount>
@@ -84,7 +84,7 @@
 				<texPath>BMT_Fossils/DisplayCase/DisplayCase</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-				<drawSize>2</drawSize>
+				<drawSize>4</drawSize>
 			</fullGraveGraphicData>
 		</building>
 		<comps>
@@ -100,7 +100,7 @@
 				<topGraphicData>
 					<texPath>BMT_Fossils/DisplayCase/DisplayCase_Top</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>2</drawSize>
+					<drawSize>4</drawSize>
 					<shaderType>Transparent</shaderType>
 				</topGraphicData>
 			</li>
