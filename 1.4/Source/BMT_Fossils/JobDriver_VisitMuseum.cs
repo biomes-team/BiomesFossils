@@ -29,24 +29,33 @@ namespace BMT_Fossils
 
 			yield return goToil;
 
-			Toil wait = ToilMaker.MakeToil("Wait");
-			wait.initAction = delegate
+			//Toil wait = ToilMaker.MakeToil("Wait");
+			//wait.initAction = delegate
+			//{
+			//	wait.actor.pather.StopDead();
+			//	wait.defaultCompleteMode = ToilCompleteMode.Delay;
+			//	wait.defaultDuration = (int)Math.Max(500, 1000 * job.targetA.Thing.TryGetComp<CompDisplay>().displayValue);
+			//};
+			//         wait.tickAction = delegate
+			//         {
+			//             WaitTickAction();
+			//         };
+			//         wait.AddFinishAction(delegate
+			//         {
+			//             TryGainMuseumThought(pawn);
+			//         });
+			//         yield return wait;
+			Toil wait = Toils_General.Wait(1000);
+			wait.tickAction = delegate
 			{
-				wait.actor.pather.StopDead();
-				wait.defaultCompleteMode = ToilCompleteMode.Delay;
-				wait.defaultDuration = (int)Math.Max(500, 1000 * job.targetA.Thing.TryGetComp<CompDisplay>().displayValue);
+				WaitTickAction();
 			};
-            wait.tickAction = delegate
-            {
-                WaitTickAction();
-            };
-            wait.AddFinishAction(delegate
-            {
-                TryGainMuseumThought(pawn);
-            });
-            yield return wait;
-
-            Toil goToExhibitToil = ToilMaker.MakeToil("MakeNewToils");
+			wait.AddFinishAction(delegate
+			{
+				TryGainMuseumThought(pawn);
+			});
+			yield return wait;
+			Toil goToExhibitToil = ToilMaker.MakeToil("MakeNewToils");
 			goToExhibitToil.initAction = delegate
 			{
 				if (job.targetQueueA.Count > 0)
