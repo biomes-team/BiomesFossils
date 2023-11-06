@@ -29,6 +29,8 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>BMT_DisplayItem</li><!-- TODO -->
+						<li>Artifacts</li>
+						<li>InertRelics</li>
 					</categories>
 				</filter>
 			</fixedStorageSettings>
@@ -37,6 +39,8 @@
 				<filter>
 					<categories>
 						<li>BMT_DisplayItem</li>
+						<li>Artifacts</li>
+						<li>InertRelics</li>
 					</categories>
 				</filter>
 			</defaultStorageSettings>
