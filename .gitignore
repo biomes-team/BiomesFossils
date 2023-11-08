@@ -355,7 +355,7 @@ MigrationBackup/
 # Localized install script
 install.sh
 copybiomeskit.sh
-*.csproj
+
 Source/BiomesCore/BiomesCore/BiomesCore.csproj
 
 # Rider project files
