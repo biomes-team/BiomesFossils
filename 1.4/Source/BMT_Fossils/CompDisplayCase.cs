@@ -19,10 +19,10 @@ namespace BMT_Fossils
 			base.PostDraw();
             if (((Building_Storage)parent).GetSlotGroup().HeldThings.Count() > 0)
             {
-                //Vector3 drawPos = parent.DrawPos;
+                Vector3 drawPos = parent.DrawPos;
 
                 //Props.topGraphicData.Graphic.Draw(drawPos, Rot4.North, parent);
-                Props.topGraphicData.Graphic.Draw(GenThing.TrueCenter(new IntVec3(parent.Position.x, parent.Position.y, parent.Position.z), parent.Rotation, parent.def.size, Altitudes.AltitudeFor(AltitudeLayer.MoteOverhead)), parent.Rotation, parent);
+                Props.topGraphicData.Graphic.Draw(GenThing.TrueCenter(parent.Position, parent.Rotation, parent.def.size, Altitudes.AltitudeFor(AltitudeLayer.MoteOverhead)), parent.Rotation, parent);
             }
         }
 
