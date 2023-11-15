@@ -69,6 +69,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
+			<drawOffset>(0,0,-0.37)</drawOffset>
 		</graphicData>
 		<uiIconScale>0.5</uiIconScale>
 		<costStuffCount>10</costStuffCount>

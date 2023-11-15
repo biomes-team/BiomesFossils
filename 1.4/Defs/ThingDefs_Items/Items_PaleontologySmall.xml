@@ -48,7 +48,7 @@
 	<description>A small piece of amber.</description>
 	<graphicData>
 	  <texPath>BMT_Fossils/AmberSmall</texPath>
-	  <drawOffset>(0,0,0.50)</drawOffset>
+	  <drawOffset>(0,0,0)</drawOffset>
 	  <drawSize>0.8,0.8</drawSize>
 	</graphicData>
 	<costList>
@@ -62,7 +62,7 @@
 	<description>A small piece of fossil.</description>
 	<graphicData>
 	  <texPath>BMT_Fossils/FossilsSmall</texPath>
-	  <drawOffset>(0,0,0.50)</drawOffset>
+	  <drawOffset>(0,0,0)</drawOffset>
 	  <drawSize>0.8,0.8</drawSize>
 	  <color>(135,116,99)</color>
 	</graphicData>
