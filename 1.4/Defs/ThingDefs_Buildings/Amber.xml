@@ -283,6 +283,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/AmberMedium</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(2.8,2.8)</drawSize>
 	</graphicData>
 	<!-- <designationCategory>Production</designationCategory> -->
@@ -295,6 +296,7 @@
 	<graphicData>
 	  <texPath>BMT_Fossils/AmberLarge</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3.5,3.5)</drawSize>
 	</graphicData>
 	<!-- <designationCategory>Production</designationCategory> -->
