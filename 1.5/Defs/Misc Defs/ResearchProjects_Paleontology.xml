@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 1: pre-electricity ===================================-->
+
+  <!--===== Column 1 ====-->
+  
+  <ResearchProjectDef>
+	<defName>BMT_Paleontology</defName>
+	<label>paleontology</label>
+	<description>Excavation of fossils and their subsequent processing for display in a museum.</description>
+	<baseCost>500</baseCost>
+	<techLevel>Medieval</techLevel>
+	<researchViewX>1.0</researchViewX>
+	<researchViewY>4.9</researchViewY>
+	<prerequisites>
+	  <li>Stonecutting</li>
+	</prerequisites>
+  </ResearchProjectDef>
+
+</Defs>

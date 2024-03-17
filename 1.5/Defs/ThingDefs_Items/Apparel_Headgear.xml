@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="HatMakeableBase" Name="BMT_Apparel_DinoHatCarni_Base">
+	<defName>BMT_Apparel_DinoHatCarni</defName>
+	<label>dino hat carni</label>
+	<description>A soft, thick cap. Great for keeping warm in winter.</description>
+	<graphicData>
+	  <texPath>BMT_Fossils/Apparel/DinoHatCarni/dinohat_south</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<uiIconScale>1.25</uiIconScale>
+	<costStuffCount>20</costStuffCount>
+	<stuffCategories>
+	  <li>Fabric</li>
+	</stuffCategories>
+	<statBases>
+	  <MaxHitPoints>80</MaxHitPoints>
+	  <WorkToMake>1200</WorkToMake>
+	  <Mass>0.07</Mass>
+	  <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Cold>0.52</StuffEffectMultiplierInsulation_Cold>
+	  <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+	  <EquipDelay>0.8</EquipDelay>
+	</statBases>
+	<generateCommonality>0.005</generateCommonality>
+	<recipeMaker>
+	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
+	  <displayPriority>105</displayPriority>
+	  <useIngredientsForColor>false</useIngredientsForColor>
+	</recipeMaker>
+	<apparel>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+	  <bodyPartGroups>
+		<li>UpperHead</li>
+	  </bodyPartGroups>
+	  <wornGraphicPath>BMT_Fossils/Apparel/DinoHatCarni/dinohat</wornGraphicPath>
+	  <layers>
+		<li>Overhead</li>
+	  </layers>
+	  <tags>
+		<li>IndustrialBasic</li>
+	  </tags>
+	  <defaultOutfitTags>
+		<li>Worker</li>
+		<li>Soldier</li>
+	  </defaultOutfitTags>
+	</apparel>
+	<colorGenerator Class="ColorGenerator_Options">
+	  <options>
+		<li>
+		  <weight>10</weight>
+		  <only>(255,255,255)</only>
+		</li>
+	  </options>
+	</colorGenerator>
+	<tradeTags>
+	  <li>BasicClothing</li>
+	</tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Apparel_DinoHatCarni_Base">
+	<defName>BMT_Apparel_DinoHatHerbi</defName>
+	<label>dino hat herbi</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Apparel/DinoHatHerbi/dinohat_south</texPath>
+	</graphicData>
+	<apparel>
+	  <wornGraphicPath>BMT_Fossils/Apparel/DinoHatHerbi/dinohat</wornGraphicPath>
+	</apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="BMT_Apparel_DinoHatCarni_Base">
+	<defName>BMT_Apparel_DinoHatMascot</defName>
+	<label>dino hat mascot</label>
+	<graphicData>
+	  <texPath>BMT_Fossils/Apparel/MascotOutfit/dinohat_south</texPath>
+	</graphicData>
+	<apparel>
+	  <wornGraphicPath>BMT_Fossils/Apparel/MascotOutfit/dinohat</wornGraphicPath>
+	</apparel>
+  </ThingDef>
+
+
+</Defs>

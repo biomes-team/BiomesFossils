@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>BMT_VelvetRope</defName>
+    <label>velvet rope</label>
+    <description>A lightweight velvet rope, to discourage visitors from getting too close to the displays. Not very sturdy.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+	<designationCategory>BMT_Paleontology</designationCategory>
+    <graphicData>
+      <texPath>BMT_Fossils/VelvetRope/VelvetRope_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom6</li>
+      </linkFlags>
+      <shadowData>
+        <volume>(0.3, 0.5, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.35,0.1,0.3,0.7)</rect>
+      </damageData>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>BMT_Fossils/Icons/VelvetRope</uiIconPath>
+    <!-- <uiIconPathsStuff> -->
+      <!-- <li> -->
+        <!-- <appearance>Metal</appearance> -->
+        <!-- <iconPath>Things/Building/Linked/FenceMetal_MenuIcon</iconPath> -->
+      <!-- </li> -->
+    <!-- </uiIconPathsStuff> -->
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <WorkToBuild>70</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costStuffCount>1</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories><costList>
+      <Steel>1</Steel>
+    </costList>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>false</blockWind>
+    <fillPercent>0.25</fillPercent>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <uiOrder>2020</uiOrder>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <building>
+      <blueprintGraphicData>
+        <texPath>BMT_Fossils/VelvetRope/VelvetRope_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+      <isInert>true</isInert>
+      <isFence>false</isFence>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+      <relatedBuildCommands>
+        <li>PenMarker</li>
+        <li>FenceGate</li>
+      </relatedBuildCommands>
+      <!-- <blueprintGraphicData> -->
+        <!-- <texPath>Things/Building/Linked/Fence_Blueprint</texPath> -->
+        <!-- <graphicClass>Graphic_Appearances</graphicClass> -->
+      <!-- </blueprintGraphicData> -->
+      <paintable>true</paintable>
+    </building>
+  </ThingDef>
+ 
+
+   <ThingDef ParentName="LampBase" >
+    <defName>BMT_DisplayLight</defName>
+    <label>display light</label>
+    <description>A small light for hilighting museum displays. Not suitable for lighting a room, but very cheap to power.</description>
+	<graphicData>
+      <texPath>BMT_Fossils/DisplayLight/DisplayLight</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(0.85,0.85)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>8</Steel>
+    </costList>
+    <statBases>
+      <Mass>1.5</Mass>
+    </statBases>
+    <rotatable>true</rotatable>
+	<designationCategory>BMT_Paleontology</designationCategory>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.5</glowRadius>
+        <glowColor>(182,123,80,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+	 <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+</Defs>

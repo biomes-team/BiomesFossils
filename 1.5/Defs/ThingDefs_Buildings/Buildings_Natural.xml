@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_MineableAmber</defName>
+		<label>amber</label>
+		<description>Rock containing bits of amber.</description>
+		<graphicData>
+			<texPath>BMT_Fossils/Ores/amber_colored_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(125,95,0)</color>
+			<colorTwo>(255,194,0)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>BMT_AmberResource</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableScatterCommonality>0.12</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>BMT_MineableFossils</defName>
+		<label>fossils</label>
+		<description>Rock containing fossils.</description>
+		<graphicData>
+			<texPath>BMT_Fossils/Ores/fossil_colored_atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(174,159,145)</color>
+			<colorTwo>(121,111,101)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>1400</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>BMT_FossilResource</mineableThing>
+			<mineableYield>20</mineableYield>
+			<mineableScatterCommonality>0.09</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>3~6</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+</Defs>

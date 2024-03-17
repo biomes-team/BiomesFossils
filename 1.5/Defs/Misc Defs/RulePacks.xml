@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RulePackDef>
+    <defName>BMT_FossilDispDescriptions</defName>
+
+    <rulePack>
+      <rulesStrings>
+	    <li>r_art_description(p=1)->[BMT_FossilQualPh], [BMT_FossilMissingPartsPh].</li>
+		
+		<li>BMT_FossilQualPh->an exceptionally well preserved [BMT_FossilSkeleWord]</li>
+		<li>BMT_FossilQualPh->a poorly preserved [BMT_FossilSkeleWord]</li>
+		<li>BMT_FossilQualPh->a fairly intact [BMT_FossilSkeleWord]</li>
+		<li>BMT_FossilQualPh->a well preserved [BMT_FossilSkeleWord]</li>
+		<li>BMT_FossilQualPh->this [BMT_FossilSkeleWord] is mostly intact</li>
+		<li>BMT_FossilQualPh->a slightly dented [BMT_FossilSkeleWord]</li>
+		<li>BMT_FossilQualPh->a lovingly restored [BMT_FossilSkeleWord]</li>
+		
+		<li>BMT_FossilSkeleWord(p=2)->skeleton</li>
+		<li>BMT_FossilSkeleWord(p=1)->fossil</li>
+		
+        <li>BMT_FossilMissingPartsPh->missing [BMT_FossMissingQtyPh] [BMT_FossMissingNounPh].</li>
+        <li>BMT_FossilMissingPartsPh->which happens to be missing [BMT_FossMissingQtyPh] [BMT_FossMissingNounPh]. </li>
+        <li>BMT_FossilMissingPartsPh(p=0.2)->missing only a few small bones that no one will look for anyways.</li>
+        <li>BMT_FossilMissingPartsPh(p=0.2)->without any missing pieces</li>
+
+		<li>BMT_FossMissingQtyPh->a few</li>
+		<li>BMT_FossMissingQtyPh->only a few</li>
+		<li>BMT_FossMissingQtyPh->several</li>
+		<li>BMT_FossMissingQtyPh->one</li>
+		<li>BMT_FossMissingQtyPh->two</li>
+		<li>BMT_FossMissingQtyPh->three</li>
+		
+		<li>BMT_FossMissingNounPh->of its tail bones</li>
+		<li>BMT_FossMissingNounPh->tail bones</li>
+		<li>BMT_FossMissingNounPh->of its ribs</li>
+		<li>BMT_FossMissingNounPh->ribs</li>
+		<li>BMT_FossMissingNounPh->small bones</li>
+		<li>BMT_FossMissingNounPh->bones</li>
+		<li>BMT_FossMissingNounPh->metatarsals</li>
+		<li>BMT_FossMissingNounPh->pieces</li>
+		<li>BMT_FossMissingNounPh->teeth</li>
+		
+	    <li>r_art_description(p=1)->[BMT_FossilAppearancePh] [BMT_FossilDeathPh].</li>
+	    <li>r_art_description(p=0.5)->signs on this skeleton indicate that it [BMT_FossilDeathPh2].</li>
+		
+		<li>BMT_FossilAppearancePh->this animal appears to have</li>
+		<li>BMT_FossilAppearancePh->this animal seems to have</li>
+		<li>BMT_FossilAppearancePh->this creature seems to have</li>
+		<li>BMT_FossilAppearancePh->this creature appears to have</li>
+		
+		<li>BMT_FossilDeathPh->died from puncture wounds</li>
+		<li>BMT_FossilDeathPh->died locked in combat with one of its own kind</li>
+		<li>BMT_FossilDeathPh->died from a bite to its neck</li>
+		<li>BMT_FossilDeathPh->been quite young when it died</li>
+		<li>BMT_FossilDeathPh->been surprisingly old when it died, a veteran of many battles</li>
+
+		<li>BMT_FossilDeathPh2->died from puncture wounds</li>
+		<li>BMT_FossilDeathPh2->died locked in combat with one of its own kind</li>
+		<li>BMT_FossilDeathPh2->died from a bite to its neck</li>
+		<li>BMT_FossilDeathPh2->was quite young when it died</li>
+		<li>BMT_FossilDeathPh2->was surprisingly old when it died</li>
+		
+	    <li>r_art_description(p=0.2)->[BMT_FossilExclPh]! [BMT_FossilIntactPh].</li>
+	    <li>r_art_description(p=0.2)->[BMT_FossilIntactPh]. [BMT_FossilExclPh]!</li>
+		
+		<li>BMT_FossilExclPh->what a spectacular find</li>
+		<li>BMT_FossilExclPh->this is nearly unheard of</li>
+		<li>BMT_FossilExclPh->amazing</li>
+		
+		<li>BMT_FossilIntactPh->even the tiniest bones in this skeleton were preserved when it died</li>
+		<li>BMT_FossilIntactPh->this skeleton is as perfectly preserved as one can get</li>
+		
+      </rulesStrings>
+    </rulePack>
+</RulePackDef>
+
+</Defs>
