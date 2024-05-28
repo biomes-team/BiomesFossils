@@ -16,6 +16,22 @@
 	<prerequisites>
 	  <li>Stonecutting</li>
 	</prerequisites>
+	<generalRules>
+		<rulesStrings>
+			<li>subject->paleontology</li>
+			<li>subject->ancient bones</li>
+			<li>subject->paleohistory</li>
+			<li>subject->fossils</li>
+			<li>subject->excavation and preservation</li>
+
+			<li>subject_story->stumbled across a mysterious skull</li>
+			<li>subject_story->discovered the first intact tyrannosaurus rex skeleton</li>
+			
+			<li>subject_gerund->assembling bones</li>
+			<li>subject_gerund->excavating skeletons</li>
+			<li>subject_gerund->interpreting remains</li>
+		</rulesStrings>
+    </generalRules>
   </ResearchProjectDef>
 
 </Defs>
