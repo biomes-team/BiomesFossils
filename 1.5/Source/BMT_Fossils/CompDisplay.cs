@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 using RimWorld;
 
@@ -58,10 +55,16 @@ namespace BMT_Fossils
                     if (parent.TryGetComp<CompDisplayCase>() != null)
                     {
                         Building_Storage displayCase = (Building_Storage)parent;
-                        if (displayCase.slotGroup.HeldThings.Any(t => t.TryGetComp<CompDisplay>().Props.canBeMuseumViewed))
+                        if (displayCase.slotGroup != null && displayCase.slotGroup.HeldThings != null)
                         {
-
-                            viewable = true;
+                            foreach (Thing thing in displayCase.slotGroup.HeldThings)
+                            {
+                                if (thing.TryGetComp<CompDisplay>()?.Props?.canBeMuseumViewed == true)
+                                {
+                                    viewable = true;
+                                    break; // Exit loop early if a viewable item is found
+                                }
+                            }
                         }
                     }
                 }
