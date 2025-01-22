@@ -20,6 +20,7 @@
 			<mineableYield>20</mineableYield>
 			<mineableScatterCommonality>0.12</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 
@@ -43,6 +44,7 @@
 			<mineableYield>20</mineableYield>
 			<mineableScatterCommonality>0.09</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>3~6</mineableScatterLumpSizeRange>
+			<veinMineable>true</veinMineable>
 		</building>
 	</ThingDef>
 </Defs>
