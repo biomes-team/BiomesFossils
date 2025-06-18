@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <JoyKindDef>
+    <defName>BMT_MuseumJoy</defName>
+    <label>museum visiting</label>
+  </JoyKindDef>
+  
+  
+  <JobDef>
+    <defName>BMT_VisitMuseum</defName>
+    <driverClass>BMT_Fossils.JobDriver_VisitMuseum</driverClass>
+    <reportString>visiting museum.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyKind>BMT_MuseumJoy</joyKind>
+  </JobDef>
+    
+	
+<JoyGiverDef>
+    <defName>BMT_VisitMuseum</defName>
+    <giverClass>BMT_Fossils.JoyGiver_VisitMuseum</giverClass>
+    <baseChance>1</baseChance>
+    <jobDef>BMT_VisitMuseum</jobDef>
+    <joyKind>BMT_MuseumJoy</joyKind>
+    <canDoWhileInBed>false</canDoWhileInBed>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+</Defs>

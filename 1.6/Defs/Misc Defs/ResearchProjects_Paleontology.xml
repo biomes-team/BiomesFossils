@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 1: pre-electricity ===================================-->
+
+  <!--===== Column 1 ====-->
+  
+  <ResearchProjectDef>
+	<defName>BMT_Paleontology</defName>
+	<label>paleontology</label>
+	<description>Excavation of fossils and their subsequent processing for display in a museum.</description>
+	<baseCost>500</baseCost>
+	<techLevel>Medieval</techLevel>
+	<researchViewX>1.0</researchViewX>
+	<researchViewY>4.9</researchViewY>
+	<prerequisites>
+	  <li>Stonecutting</li>
+	</prerequisites>
+	<generalRules>
+		<rulesStrings>
+			<li>subject->paleontology</li>
+			<li>subject->ancient bones</li>
+			<li>subject->paleohistory</li>
+			<li>subject->fossils</li>
+			<li>subject->excavation and preservation</li>
+
+			<li>subject_story->stumbled across a mysterious skull</li>
+			<li>subject_story->discovered the first intact tyrannosaurus rex skeleton</li>
+			
+			<li>subject_gerund->assembling bones</li>
+			<li>subject_gerund->excavating skeletons</li>
+			<li>subject_gerund->interpreting remains</li>
+		</rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

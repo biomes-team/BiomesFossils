@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/lootTable</xpath>
+		<value>
+			<li>
+				<thing>BMT_AmberResource</thing>
+				<weight>0.1</weight>
+			</li>
+			<li>
+				<thing>BMT_FossilResource</thing>
+				<weight>0.1</weight>
+			</li>
+		</value>
+	</Operation>
+</Patch>

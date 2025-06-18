@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="VOE.OutpostExtension_Mining"]/Resources
+		</xpath>
+		<value>
+			<BMT_AmberResource>45</BMT_AmberResource>
+			<BMT_FossilResource>45</BMT_FossilResource>
+		</value>
+	</Operation>
+</Patch>

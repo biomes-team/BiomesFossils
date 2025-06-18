@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+        <!-- Adds the Psychic Insanity Lance and the Psychich Shock Lance -->
+		<xpath>Defs/ThingDef[
+            defName="Apparel_PsychicInsanityLance" or
+            defName="Apparel_PsychicShockLance"]/thingCategories
+        </xpath>
+		<value>
+			<li>Artifacts</li>
+		</value>
+	</Operation>
+</Patch>
