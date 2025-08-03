@@ -4,7 +4,7 @@
   <ThingDef ParentName="BenchBase">
 	<defName>BMT_TablePaleontology</defName>
 	<label>paleontology bench</label>
-	<description>A workbench equipped for creating art.</description>
+	<description>A workbench equipped for piecing together fossils and amber into displayable works.</description>
 	<thingClass>Building_WorkTable</thingClass>
 	<graphicData>
 	  <texPath>BMT_Fossils/PaleontologyBench/FossilBench</texPath>
