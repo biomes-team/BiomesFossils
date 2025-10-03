@@ -25,6 +25,7 @@
 	<statBases>
 	  <Flammability>1.0</Flammability>
 	  <SellPriceFactor>1.10</SellPriceFactor>
+	  <WorkToMake>1200</WorkToMake>	  
 	  <Mass>2</Mass>
 	  <Beauty>10</Beauty>
 	</statBases>
