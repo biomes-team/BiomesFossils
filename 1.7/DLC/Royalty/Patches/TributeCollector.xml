@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TraderKindDef[defName="Empire_Caravan_TributeCollector"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>BMT_AmberResource</thingDef>
+			</li>
+		</value>
+	</Operation>
+</Patch>

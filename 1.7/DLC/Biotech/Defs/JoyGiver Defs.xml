@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- museum learning -->
+  <LearningDesireDef>
+    <defName>BMT_MuseumLearning</defName>
+    <label>museum learning</label>
+    <description>Visiting a museum to learn about the past. Requires an accessible museum.</description>
+    <workerClass>BMT_Fossils.LearningGiver_MuseumLearning</workerClass>
+    <iconPath>BMT_Fossils/Icons/MuseumLearning</iconPath>
+    <jobDef>BMT_MuseumLearning</jobDef>
+  </LearningDesireDef>
+  
+  <JobDef>
+    <defName>BMT_MuseumLearning</defName>
+    <driverClass>BMT_Fossils.JobDriver_MuseumLearning</driverClass>
+    <reportString>museum learning.</reportString>
+  </JobDef>
+  
+</Defs>
